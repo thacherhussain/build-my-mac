@@ -8,7 +8,7 @@ Likewise, this structure lends itself to being extended with any modules of your
 
 <hr>
 
-## Project Ogranization
+## Project Organization
 
 The *install.sh* script is what will be run upon executing the start-up command listed below.
 This script will get Brew up and running on your machine 🍻.
