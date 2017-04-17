@@ -279,7 +279,7 @@ Obviously, back up all the files you don't want to have blown away before going 
 #### My "After-Market" Adds
 
 - [Mail Butler](https://www.mailbutler.io)
-- `pip install bitbucket-cli`
+- [`pip install bitbucket-cli`](https://bitbucket.org/zhemao/bitbucket-cli)
 
 For Java Environment:
 
