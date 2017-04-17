@@ -212,12 +212,12 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 
 - [Atom] - GitHub's open source text editor
 - [Alfred] - Mac Spotlight replacement with more custom and productive actions to control your Mac.
-- [CloudApp] - Sharable screen capture tool with terminal integration.
+// - [CloudApp] - Sharable screen capture tool with terminal integration.
 - [Dash] - Offline access to 150+ API documentation sets plus script manager.
 - [Dropbox] - Cloud storage.
 - [Firefox] - Mozilla's web browser.
 - [Google chrome] - Google's web browser.
-- [Google chrome canary] - Google's web browser with beta features.
+// - [Google chrome canary] - Google's web browser with beta features.
 - [iterm2] - A terminal emulator and replacement for Mac's default Terminal app.
 - [Screenhero] - Coding oriented screen share with multi mouse/cursor.
 - [Slack] - A messaging app (corporate IRC 👔).
@@ -237,14 +237,16 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 #### App Store - Homebrew Mas
 
 - [Evernote] - Note manager app.
-- [Memory Clean] - Memory manager for your toolbar.
-- [Monodraw] - Powerful ASCII art editor designed for the Mac.
-- [Moom] - Window manager.
-- [Pixelmator] - Photo editor.
-- [Pocket] - Article saver/offline reader.
+// - [Memory Clean] - Memory manager for your toolbar.
+// - [Monodraw] - Powerful ASCII art editor designed for the Mac.
+// - [Moom] - Window manager.
+// - [Pixelmator] - Photo editor.
+// - [Pocket] - Article saver/offline reader.
 - [Sip] - Color picker.
 - [SnappyApp] - Screen capture tool that leaves cropped capture ontop of all windows.
 - [Xcode] - Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
+
+*If you are going to test this out a few times it is recommended that you download the dmg for Xcode and preinstall it from a usb drive rather than having to download it each time*
 
 [Evernote]: https://evernote.com/
 [Memory Clean]: https://itunes.apple.com/us/app/memory-clean-monitor-free/id451444120?mt=12
@@ -273,3 +275,21 @@ Obviously, back up all the files you don't want to have blown away before going 
 - Close the Disk Utility window to get back to the "macOS Utilities" window.
 - Now choose the option in the list labled "Reinstall macOS" and click "Continue"
 - From here it will guide you through the steps to a fresh install.
+
+#### My "After-Market" Adds
+
+- [Mail Butler](https://www.mailbutler.io)
+
+For Java Environment:
+
+- Install [MySQL Workbench](https://www.mysql.com/products/workbench/)
+- Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+- [Java8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [Gradle](http://www.gradle.org/): *Add to brew packages
+  - Run `brew install gradle`
+  - To confirm, run `gradle -version`. The computer should display `Gradle 2.XX`.
+
+#### My Post Install Configs
+- Toolbar
+- Items to load on startup
+- Desktop image
