@@ -315,3 +315,19 @@ Other applications:
 - skype
 - spectacle
 - spotify
+
+
+atom plugins:
+atom-beautify
+atom-bootstrap3
+atom-javascript-snippets
+auto-indent
+*intentions
+*javascript-snippets
+language-babel
+less-autocompile
+linter
+linter-ui-default
+open-in-browsers
+
+autosave on focus
