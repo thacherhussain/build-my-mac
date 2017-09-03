@@ -53,7 +53,7 @@ Moves into */Projects* directory and untars the tar downlaoded file.
 cd ~/Projects && mv thacherT1D* dotfiles
 ```
 
-Changes the name of the untared directory from "MrJadam-mac-maker-[SHA]" to "dotfiles"
+Changes the name of the untared directory from "MrJadaml-mac-maker-[SHA]" to "dotfiles"
 
 ### ❄️ Personalize...
 
@@ -293,4 +293,15 @@ For Java Environment:
 #### My Post Install Configs
 - Toolbar
 - Items to load on startup
-- Desktop image
+- Desktop image (photos)
+
+Other applications: 
+- Sketch
+- Bartender (setups)
+- Craft Manager
+- Duet
+- Google Drive
+- IntelliJ
+- JetBrains Toolbox
+- join.me
+
