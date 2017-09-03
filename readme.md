@@ -241,7 +241,7 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 // - [Monodraw] - Powerful ASCII art editor designed for the Mac.
 // - [Moom] - Window manager.
 // - [Pixelmator] - Photo editor.
-// - [Pocket] - Article saver/offline reader.
+- [Pocket] - Article saver/offline reader.
 - [Sip] - Color picker.
 - [SnappyApp] - Screen capture tool that leaves cropped capture ontop of all windows.
 - [Xcode] - Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
@@ -295,13 +295,23 @@ For Java Environment:
 - Items to load on startup
 - Desktop image (photos)
 
-Other applications: 
-- Sketch
+Other applications:
 - Bartender (setups)
+- diasend
+- Sketch
+
 - Craft Manager
 - Duet
 - Google Drive
 - IntelliJ
 - JetBrains Toolbox
 - join.me
-
+- jumpcut
+- microsoft office
+- minecraft
+- tweetbot
+- firefox developer edition
+- flux
+- skype
+- spectacle
+- spotify
