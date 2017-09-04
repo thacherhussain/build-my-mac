@@ -86,38 +86,6 @@ To accept the Xcode agreement from the terminal, run the following command in yo
 sudo xcodebuild -license accept
 ```
 
-#### ␛ Vim & Tmux Setup...
-
-##### Plugins Install
-
-For those who are using Vim, once the main install is finished, open up the *.vimrc* file with Vim.
-
-```sh
-vim ~/.vimrc
-```
-
-And while in vim install all the Vundle packages.
-
-```sh
-:PluginInstall
-```
-
-##### YouCompleteMe config
-
-For those using the YouCompleteMe plugin with Vim you will need to [run a couple additional commands](https://github.com/Valloric/YouCompleteMe#mac-os-x) after you install your plugins.
-Move into the YouCompleteMe binary directory:
-
-```sh
-cd ~/.vim/bundle/YouCompleteMe
-```
-
-The "tern" flag will provide JS support.
-
-```sh
-# for JavaScript support:
-./install.py --tern-completer
-```
-
 ##### Powerline fonts config
 
 In iTerm, move to the Text options by selecting iTerm2 > Preferences > Profile > Text
@@ -254,13 +222,13 @@ Obviously, back up all the files you don't want to have blown away before going 
 - Restart your computer and hold down `⌘ + r`.
 - Once you see the white  logo and a progress bar you can let go of `⌘ + r`
 - The "macOS Utilities" menu will pop up. Select the "Disk Utility" option from the list.
-- From the sidebar labeled "Internal" click on sub hardive icon labled "Macintosh HD"
+- From the sidebar labeled "Internal" click on sub hardrive icon labeled "Macintosh HD"
 - From the row of icons at the top, click "Erase"
 - A popup menu will appear with a field for the "Name" and "Format".
   Just leave the defaults and click the "Erase" button in the bottom right.
 - Once it goes through its speel, click "Done"
 - Close the Disk Utility window to get back to the "macOS Utilities" window.
-- Now choose the option in the list labled "Reinstall macOS" and click "Continue"
+- Now choose the option in the list labeled "Reinstall macOS" and click "Continue"
 - From here it will guide you through the steps to a fresh install.
 
 #### My "After-Market" Adds
