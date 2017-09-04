@@ -164,37 +164,23 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 - [git-secrets] - Prevents you from committing secrets and creds into git repositories.
 - [heroku-toolbelt] - A Heroku CLI.
 - [httpie] - Command line HTTP client with an intuitive UI, JSON support, syntax highlighting.
-- [imagemagick] - Create, edit, compose, or convert bitmap images.
 - [mas] - Mac App Store command line interface.
-- [mono] - Open source project to create Ecma compliant, .NET tools for C#.
-- [openssl] - Open source toolkit for Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols.
-- [phantomjs] - Headless web browser scriptable with a JavaScript API.
 - [postgresql] - An open source relational database management system (DBMS).
-- [reattach-to-user-namespace] - Path to enable access to OSX pasteboard for programs run under tmux.
-- [redis] - Open source in-memory data structure store, used as a database, cache and message broker.
-- [tmux] - A terminal multiplexer.
+- [mySQL]
 - [vim] - Highly configurable text editor built in with most UNIX systems | update.
-- [wget] - A non-interactive CLI for retrieving files using HTTP, HTTPS and FTP.
 - [z] - A more convenient `cd` which tracks your most used directories, based on 'frecency'.
 
-[Homebrew]: http://brew.sh/
+<!-- [Homebrew]: http://brew.sh/
 [ctags]: http://ctags.sourceforge.net/
 [git]: https://git-scm.com/
 [git-secrets]: https://github.com/awslabs/git-secrets
 [heroku-toolbelt]: https://devcenter.heroku.com/articles/heroku-cli
 [httpie]: https://httpie.org/
-[imagemagick]: https://www.imagemagick.org/script/index.php
 [mas]: https://github.com/mas-cli/mas
-[mono]: http://www.mono-project.com/
-[openssl]: https://www.openssl.org/
-[phantomjs]: http://phantomjs.org/
 [postgresql]: https://www.postgresql.org/
-[reattach-to-user-namespace]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
-[redis]: https://redis.io/
-[tmux]: https://tmux.github.io/
+[mySQL]
 [vim]: http://www.vim.org/
-[wget]: https://www.gnu.org/software/wget/
-[z]: https://github.com/rupa/z
+[z]: https://github.com/rupa/z -->
 
 #### Shell
 
@@ -209,54 +195,55 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 [zsh]: http://www.zsh.org/
 
 #### Apps - Homebrew Cask
-
+- [java]
 - [Atom] - GitHub's open source text editor
 - [Alfred] - Mac Spotlight replacement with more custom and productive actions to control your Mac.
-// - [CloudApp] - Sharable screen capture tool with terminal integration.
-- [Dash] - Offline access to 150+ API documentation sets plus script manager.
-- [Dropbox] - Cloud storage.
+- [Bartender]
+- [Duet]
 - [Firefox] - Mozilla's web browser.
+- [Firefox Developer Edition]
 - [Google chrome] - Google's web browser.
-// - [Google chrome canary] - Google's web browser with beta features.
+- [Google Drive]
 - [iterm2] - A terminal emulator and replacement for Mac's default Terminal app.
+- [JetBrains Toolbox]
+- [Join.me]
+- [jumpcut]
+- [MailButler]
+- [Minecraft]
+- [Microsoft Office]
+- [mySQL Workbench]
 - [Screenhero] - Coding oriented screen share with multi mouse/cursor.
 - [Slack] - A messaging app (corporate IRC 👔).
+- [Spectacle]
+- [Spotify]
+- [Sketch]
+- [Skype]
 
-[Atom]: https://atom.io/
+<!-- [Atom]: https://atom.io/
 [Alfred]: https://www.alfredapp.com/
-[CloudApp]: https://www.getcloudapp.com/
-[Dash]: https://kapeli.com/dash
-[Dropbox]: https://www.dropbox.com/
 [Firefox]: https://www.mozilla.org/en-US/firefox/products/
+[Firefox Developer Edition]
 [Google chrome]: https://www.google.com/chrome/
-[Google chrome canary]: https://www.google.com/chrome/browser/canary.html
+[Mail Butler](https://www.mailbutler.io)
 [iterm2]: https://www.iterm2.com/
 [Screenhero]: https://screenhero.com/
-[Slack]: https://slack.com/
+[Slack]: https://slack.com/ -->
 
 #### App Store - Homebrew Mas
 
 - [Evernote] - Note manager app.
-// - [Memory Clean] - Memory manager for your toolbar.
-// - [Monodraw] - Powerful ASCII art editor designed for the Mac.
-// - [Moom] - Window manager.
-// - [Pixelmator] - Photo editor.
 - [Pocket] - Article saver/offline reader.
 - [Sip] - Color picker.
-- [SnappyApp] - Screen capture tool that leaves cropped capture ontop of all windows.
+- [Tweetbot]
 - [Xcode] - Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
 
 *If you are going to test this out a few times it is recommended that you download the dmg for Xcode and preinstall it from a usb drive rather than having to download it each time*
 
-[Evernote]: https://evernote.com/
-[Memory Clean]: https://itunes.apple.com/us/app/memory-clean-monitor-free/id451444120?mt=12
-[Monodraw]: https://monodraw.helftone.com/
-[Moom]: https://manytricks.com/moom/
-[Pixelmator]: http://www.pixelmator.com/mac/
+<!-- [Evernote]: https://evernote.com/
 [Pocket]: https://getpocket.com/
 [Sip]: http://sipapp.io/
-[SnappyApp]: http://snappy-app.com/
-[Xcode]: https://developer.apple.com/xcode/
+[Tweetbot]
+[Xcode]: https://developer.apple.com/xcode/ -->
 
 <hr>
 
@@ -278,44 +265,25 @@ Obviously, back up all the files you don't want to have blown away before going 
 
 #### My "After-Market" Adds
 
-- [Mail Butler](https://www.mailbutler.io)
-- [`pip install bitbucket-cli`](https://bitbucket.org/zhemao/bitbucket-cli)
-
 For Java Environment:
 
-- Install [MySQL Workbench](https://www.mysql.com/products/workbench/)
 - Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 - [Java8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Gradle](http://www.gradle.org/): *Add to brew packages
   - Run `brew install gradle`
   - To confirm, run `gradle -version`. The computer should display `Gradle 2.XX`.
 
+
 #### My Post Install Configs
-- Toolbar
+- Dock Icons and Order
 - Items to load on startup
 - Desktop image (photos)
 
 Other applications:
-- Bartender (setups)
 - diasend
-- Sketch
-
 - Craft Manager
-- Duet
-- Google Drive
-- IntelliJ
-- JetBrains Toolbox
-- join.me
-- jumpcut
-- microsoft office
-- minecraft
-- tweetbot
-- firefox developer edition
-- flux
-- skype
-- spectacle
-- spotify
 
+- zsh theme: cobalt2 (https://github.com/wesbos/Cobalt2-iterm) + powerline font (https://github.com/powerline/fonts)
 
 atom plugins:
 atom-beautify
@@ -331,3 +299,7 @@ linter-ui-default
 open-in-browsers
 
 autosave on focus
+
+chrome extensions
+chrome logins
+add all accounts to "Internet Accounts"

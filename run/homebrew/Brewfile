@@ -13,16 +13,12 @@ brew 'git'
 brew 'git-secrets'
 brew 'heroku-toolbelt'
 brew 'httpie'
-brew 'imagemagick'
-brew 'mono'
-brew 'openssl'
-brew 'phantomjs'
+
 brew 'postgresql'
-brew 'reattach-to-user-namespace'
-brew 'redis'
-brew 'tmux', args: ['reattach-to-user-namespace']
+brew 'mysql'
+
 brew 'vim'
-brew 'wget'
+
 brew 'zsh'
 brew 'z'
 

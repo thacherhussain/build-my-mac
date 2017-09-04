@@ -10,22 +10,7 @@ call vundle#begin()
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'scrooloose/nerdtree'
   Plugin 'scrooloose/syntastic'
-  Plugin 'easymotion/vim-easymotion'
-  Plugin 'edkolev/tmuxline.vim'
-  Plugin 'pangloss/vim-javascript'
-  Plugin 'bronson/vim-trailing-whitespace'
-  Plugin 'mxw/vim-jsx'
-  Plugin 'nathanaelkane/vim-indent-guides'
-  Plugin 'rizzatti/dash.vim'
-  Plugin 'tpope/vim-surround'
-  Plugin 'tpope/vim-markdown'
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'airblade/vim-gitgutter'
-  Plugin 'bling/vim-airline'
-  Plugin 'kien/ctrlp.vim'
-  Plugin 'elzr/vim-json'
-  Plugin 'ap/vim-css-color'
-  Plugin 'valloric/youcompleteme'
+
 call vundle#end()
 
 filetype plugin indent on    " required
@@ -103,5 +88,3 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 " Line number gutter colors
 highlight LineNr ctermfg=57 ctermbg=233 guifg=Purple guibg=DarkGray
 highlight SignColumn ctermbg=233 guibg=DarkGray
-
-
