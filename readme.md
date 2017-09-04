@@ -271,3 +271,4 @@ autosave on focus
 chrome extensions
 chrome logins
 add all accounts to "Internet Accounts"
+update trackpad to include single click
