@@ -31,6 +31,47 @@ For example in the *zsh* module both *antigen* (my personal preference) and *oh-
 
 <hr>
 
+## Getting Started
+
+Before getting started download the most recent versions of XCode, XCode command line tools, and new operating systems (as applicable) to a thumb drive. 
+
+#### Quick Reformating Guide. 💾
+
+Obviously, back up all the files you don't want to have blown away before going through this process.
+
+- Restart your computer and hold down `⌘ + r`.
+- Once you see the white  logo and a progress bar you can let go of `⌘ + r`
+- The "macOS Utilities" menu will pop up. Select the "Disk Utility" option from the list.
+- From the sidebar labeled "Internal" click on sub hardrive icon labeled "Macintosh HD"
+- From the row of icons at the top, click "Erase"
+- A popup menu will appear with a field for the "Name" and "Format".
+  Just leave the defaults and click the "Erase" button in the bottom right.
+- Once it goes through its speel, click "Done"
+- Close the Disk Utility window to get back to the "macOS Utilities" window.
+- Now choose the option in the list labeled "Reinstall macOS" and click "Continue"
+- From here it will guide you through the steps to a fresh install.
+
+**Update Trackpad to use single tap to click**
+
+#### Update Operating System
+
+Go to App Store and run any operating system updates (or install from thumb drive)
+
+#### Install XCode
+
+Install XCode and XCode Command Line Tools from thumb drive
+
+#### Accept Xcode Agreement
+
+To accept the Xcode agreement from the terminal, run the following command in your terminal:
+
+```
+sudo xcodebuild -license accept
+```
+
+**Open XCode to see/accept any additional requirements or install any additional components**
+
+
 ## Install Instructions
 
 ### 💾 Download...
@@ -53,14 +94,8 @@ Moves into */Projects* directory and untars the tar downlaoded file.
 cd ~/Projects && mv thacherT1D* dotfiles
 ```
 
-Changes the name of the untared directory from "MrJadaml-mac-maker-[SHA]" to "dotfiles"
+Changes the name of the untared directory from "thacherT1D-mac-maker-[SHA]" to "dotfiles"
 
-### ❄️ Personalize...
-
-Once the project is copied I suggest you rummage through it and make any modifications to suit your personal preferences.
-
-There is an optional Brew mas setup for Apple Store apps that you will be prompted about durring installation.
-Please have your email and password for the Apple Store ready.
 
 ### 📝 Install...
 
@@ -78,13 +113,6 @@ source install.sh
 
 When it promts you to enter your password, be sure to check if it is asking for your computer password or your appleID password.
 
-#### Accept Xcode Agreement
-
-To accept the Xcode agreement from the terminal, run the following command in your terminal:
-
-```
-sudo xcodebuild -license accept
-```
 
 ##### Powerline fonts config
 
@@ -138,7 +166,7 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 - [vim] - Highly configurable text editor built in with most UNIX systems | update.
 - [z] - A more convenient `cd` which tracks your most used directories, based on 'frecency'.
 
-<!-- [Homebrew]: http://brew.sh/
+[Homebrew]: http://brew.sh/
 [ctags]: http://ctags.sourceforge.net/
 [git]: https://git-scm.com/
 [git-secrets]: https://github.com/awslabs/git-secrets
@@ -148,7 +176,7 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 [postgresql]: https://www.postgresql.org/
 [mySQL]
 [vim]: http://www.vim.org/
-[z]: https://github.com/rupa/z -->
+[z]: https://github.com/rupa/z
 
 #### Shell
 
@@ -187,7 +215,7 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 - [Sketch]
 - [Skype]
 
-<!-- [Atom]: https://atom.io/
+[Atom]: https://atom.io/
 [Alfred]: https://www.alfredapp.com/
 [Firefox]: https://www.mozilla.org/en-US/firefox/products/
 [Firefox Developer Edition]
@@ -195,7 +223,7 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 [Mail Butler](https://www.mailbutler.io)
 [iterm2]: https://www.iterm2.com/
 [Screenhero]: https://screenhero.com/
-[Slack]: https://slack.com/ -->
+[Slack]: https://slack.com/
 
 #### App Store - Homebrew Mas
 
@@ -207,29 +235,14 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 
 *If you are going to test this out a few times it is recommended that you download the dmg for Xcode and preinstall it from a usb drive rather than having to download it each time*
 
-<!-- [Evernote]: https://evernote.com/
+[Evernote]: https://evernote.com/
 [Pocket]: https://getpocket.com/
 [Sip]: http://sipapp.io/
 [Tweetbot]
-[Xcode]: https://developer.apple.com/xcode/ -->
+[Xcode]: https://developer.apple.com/xcode/
 
 <hr>
 
-#### Quick Reformating Guide. 💾
-
-Obviously, back up all the files you don't want to have blown away before going through this process.
-
-- Restart your computer and hold down `⌘ + r`.
-- Once you see the white  logo and a progress bar you can let go of `⌘ + r`
-- The "macOS Utilities" menu will pop up. Select the "Disk Utility" option from the list.
-- From the sidebar labeled "Internal" click on sub hardrive icon labeled "Macintosh HD"
-- From the row of icons at the top, click "Erase"
-- A popup menu will appear with a field for the "Name" and "Format".
-  Just leave the defaults and click the "Erase" button in the bottom right.
-- Once it goes through its speel, click "Done"
-- Close the Disk Utility window to get back to the "macOS Utilities" window.
-- Now choose the option in the list labeled "Reinstall macOS" and click "Continue"
-- From here it will guide you through the steps to a fresh install.
 
 #### My "After-Market" Adds
 
