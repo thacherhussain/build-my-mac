@@ -51,7 +51,7 @@ Obviously, back up all the files you don't want to have blown away before going 
 - Now choose the option in the list labeled "Reinstall macOS" and click "Continue"
 - From here it will guide you through the steps to a fresh install.
 
-**Update Trackpad to use single tap to click**
+**If you are bothered by this, now is the time to update the trackpad to use single tap to click**
 
 #### Update Operating System
 
