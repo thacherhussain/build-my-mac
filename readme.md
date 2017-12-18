@@ -31,10 +31,6 @@ For example in the *zsh* module both *antigen* (my personal preference) and *oh-
 
 <hr>
 
-## Getting Started
-
-Before getting started download the most recent versions of XCode, XCode command line tools, and new operating systems (as applicable) to a thumb drive. 
-
 #### Quick Reformating Guide. 💾
 
 Obviously, back up all the files you don't want to have blown away before going through this process.
@@ -55,21 +51,15 @@ Obviously, back up all the files you don't want to have blown away before going 
 
 #### Update Operating System
 
-Go to App Store and run any operating system updates (or install from thumb drive)
+Go to App Store and run any operating system updates
 
-#### Install XCode
+#### XCode
 
-Install XCode and XCode Command Line Tools from thumb drive
+Install XCode from the AppStore
 
-Command Line Tools from terminal: `xcode-select --install`
+Install XCode Command Line Tools from terminal: `xcode-select --install`
 
-#### Accept Xcode Agreement
-
-To accept the Xcode agreement from the terminal, run the following command in your terminal:
-
-```
-sudo xcodebuild -license accept
-```
+Accept the Xcode agreement from the terminal: `xcodebuild -license accept`
 
 **Open XCode to see/accept any additional requirements or install any additional components**
 
