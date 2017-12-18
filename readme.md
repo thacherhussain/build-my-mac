@@ -61,6 +61,8 @@ Go to App Store and run any operating system updates (or install from thumb driv
 
 Install XCode and XCode Command Line Tools from thumb drive
 
+Command Line Tools from terminal: `xcode-select --install`
+
 #### Accept Xcode Agreement
 
 To accept the Xcode agreement from the terminal, run the following command in your terminal:
