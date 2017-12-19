@@ -11,12 +11,12 @@ Likewise, this structure lends itself to being extended with any modules of your
 ## Project Organization
 
 The *install.sh* script is what will be run upon executing the start-up command listed below.
-This script will get Brew up and running on your machine 🍻.
+This script will get Brew up and running on your machine.
 The Brewfile will install a number of binarys, libraries and applications during the Brew install process.
 It is recommended that you look over this file and the supporting *brew-casks* and *brew-mas* files to customize the setup to your liking. Any applications that are paid apps must be purchased with the apple id you are using before running the script.
 Note that Xcode is one of the items included in the `mas` bundle.
 It has been isolated to its own *xcode-install* file as a convenience to allow for an optional install durring run time,
-due to its hell-ishly long install times ⏰.
+due to its hell-ishly long install times.
 
 After the Brew process is finished the *install.sh* script will begin to source the individual system modules to be installed.
 If you do not wish to have a particular module installed on your machine simply delete,
@@ -61,7 +61,7 @@ Install XCode Command Line Tools from terminal: `xcode-select --install`
 
 Accept the Xcode agreement from the terminal: `xcodebuild -license accept`
 
-**Open XCode to see/accept any additional requirements or install any additional components**
+Open XCode to see/accept any additional requirements or install any additional components
 
 
 ## Install Instructions
