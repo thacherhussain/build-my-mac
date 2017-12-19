@@ -138,100 +138,63 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 
 #### Ruby
 
-- [Ruby] - A dynamic, open source programming language with a focus on simplicity and productivity -- MINASWAN
-- [rvm] - Ruby Version Manager: Simple script to mange multiple versions of Ruby.
+- [Ruby](https://www.ruby-lang.org/en/) - A dynamic, open source programming language with a focus on simplicity and productivity -- MINASWAN
+- [rvm](https://rvm.io/) - Ruby Version Manager: Simple script to mange multiple versions of Ruby.
 
-[Ruby]: https://www.ruby-lang.org/en/
-[rvm]: https://rvm.io/
 
 #### Homebrew
 
-- [Homebrew] - Homebrew installs the stuff you need that Apple didn’t.
-- [ctags] - Indexes language objects in source files so your text editor can quickly reference them.
-- [git] - Open source version control system | update.
-- [git-secrets] - Prevents you from committing secrets and creds into git repositories.
-- [heroku-toolbelt] - A Heroku CLI.
-- [httpie] - Command line HTTP client with an intuitive UI, JSON support, syntax highlighting.
-- [mas] - Mac App Store command line interface.
-- [postgresql] - An open source relational database management system (DBMS).
-- [mySQL]
-- [vim] - Highly configurable text editor built in with most UNIX systems | update.
-- [z] - A more convenient `cd` which tracks your most used directories, based on 'frecency'.
-
-[Homebrew]: http://brew.sh/
-[ctags]: http://ctags.sourceforge.net/
-[git]: https://git-scm.com/
-[git-secrets]: https://github.com/awslabs/git-secrets
-[heroku-toolbelt]: https://devcenter.heroku.com/articles/heroku-cli
-[httpie]: https://httpie.org/
-[mas]: https://github.com/mas-cli/mas
-[postgresql]: https://www.postgresql.org/
-[mySQL]
-[vim]: http://www.vim.org/
-[z]: https://github.com/rupa/z
+- [Homebrew](http://brew.sh/) - Homebrew installs the stuff you need that Apple didn’t.
+- [ctags](http://ctags.sourceforge.net/) - Indexes language objects in source files so your text editor can quickly reference them.
+- [git](https://git-scm.com/) - Open source version control system | update.
+- [git-secrets](https://github.com/awslabs/git-secrets) - Prevents you from committing secrets and creds into git repositories.
+- [Gradle](http://www.gradle.org/)
+- [heroku-toolbelt](https://devcenter.heroku.com/articles/heroku-cli) - A Heroku CLI.
+- [httpie](https://httpie.org/) - Command line HTTP client with an intuitive UI, JSON support, syntax highlighting.
+- [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface.
+- [postgresql](https://www.postgresql.org/) - An open source relational database management system (DBMS).
+- [mySQL](https://www.mysql.com/) - Another popular open source database  
+- [z](https://github.com/rupa/z) - A more convenient `cd` which tracks your most used directories, based on 'frecency'.
 
 #### Shell
 
-- [antigen] - A plugin manager for zsh, inspired by oh-my-zsh and vundle.
-- [bash] - Built-in shell | update.
-- [oh-my-zsh] - Community-driven framework for managing your zsh configuration.
-- [zsh] - An interactive UNIX shell.
-
-[antigen]: https://github.com/zsh-users/antigen
-[bash]: https://www.gnu.org/software/bash/
-[oh-my-zsh]: https://github.com/robbyrussell/oh-my-zsh
-[zsh]: http://www.zsh.org/
+- [bash](https://www.gnu.org/software/bash/) - Built-in shell | update.
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) - Community-driven framework for managing your zsh configuration.
+- [zsh](http://www.zsh.org/) - An interactive UNIX shell.
 
 #### Apps - Homebrew Cask
 - [java]
-- [Atom] - GitHub's open source text editor
-- [Alfred] - Mac Spotlight replacement with more custom and productive actions to control your Mac.
+- [Atom](https://atom.io/) - GitHub's open source text editor
+- [Alfred](https://www.alfredapp.com/) - Mac Spotlight replacement with more custom and productive actions to control your Mac.
 - [Bartender]
 - [Duet]
-- [Firefox] - Mozilla's web browser.
+- [Firefox](https://www.mozilla.org/en-US/firefox/products/) - Mozilla's web browser.
 - [Firefox Developer Edition]
-- [Google chrome] - Google's web browser.
+- [Google chrome](https://www.google.com/chrome/) - Google's web browser.
 - [Google Drive]
-- [iterm2] - A terminal emulator and replacement for Mac's default Terminal app.
+- [iterm2](https://www.iterm2.com/) - A terminal emulator and replacement for Mac's default Terminal app.
 - [JetBrains Toolbox]
 - [Join.me]
 - [jumpcut]
-- [MailButler]
+- [MailButler](https://www.mailbutler.io)
 - [Minecraft]
 - [Microsoft Office]
 - [mySQL Workbench]
-- [Screenhero] - Coding oriented screen share with multi mouse/cursor.
-- [Slack] - A messaging app (corporate IRC 👔).
+- [Slack](https://slack.com/) - A messaging app
 - [Spectacle]
 - [Spotify]
 - [Sketch]
 - [Skype]
 
-[Atom]: https://atom.io/
-[Alfred]: https://www.alfredapp.com/
-[Firefox]: https://www.mozilla.org/en-US/firefox/products/
-[Firefox Developer Edition]
-[Google chrome]: https://www.google.com/chrome/
-[Mail Butler](https://www.mailbutler.io)
-[iterm2]: https://www.iterm2.com/
-[Screenhero]: https://screenhero.com/
-[Slack]: https://slack.com/
-
 #### App Store - Homebrew Mas
 
-- [Evernote] - Note manager app.
-- [Pocket] - Article saver/offline reader.
-- [Sip] - Color picker.
+- [Evernote](https://evernote.com/) - Note manager app.
+- [Pocket](https://getpocket.com/) - Article saver/offline reader.
+- [Sip](http://sipapp.io/) - Color picker.
 - [Tweetbot]
-- [Xcode] - Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
+- [Xcode](https://developer.apple.com/xcode/)- Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
 
 *If you are going to test this out a few times it is recommended that you download the dmg for Xcode and preinstall it from a usb drive rather than having to download it each time*
-
-[Evernote]: https://evernote.com/
-[Pocket]: https://getpocket.com/
-[Sip]: http://sipapp.io/
-[Tweetbot]
-[Xcode]: https://developer.apple.com/xcode/
 
 <hr>
 
@@ -242,7 +205,7 @@ For Java Environment:
 
 - Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 - [Java8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- [Gradle](http://www.gradle.org/): *Add to brew packages
+- [Gradle](http://www.gradle.org/): *Added to brew packages
   - Run `brew install gradle`
   - To confirm, run `gradle -version`. The computer should display `Gradle 2.XX`.
 
