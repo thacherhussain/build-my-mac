@@ -17,7 +17,7 @@ brew 'httpie'
 brew 'postgresql'
 brew 'mysql'
 
-# brew 'vim'
+brew 'vim'
 
 brew 'zsh'
 brew 'z'
