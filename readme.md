@@ -187,15 +187,14 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 
 <hr>
 
+##### Notes from Last Run: 
+- Hombrew Link Failure
+- Adjust order or placement Brewfile or Brew Cask for Java8 in order to have it install before gradle
 
 #### My "After-Market" Adds
 
 For Java Environment:
 - Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
-- [Java8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- [Gradle](http://www.gradle.org/): *Added to brew packages
-  - Run `brew install gradle`
-  - To confirm, run `gradle -version`. The computer should display `Gradle 2.XX`.
 
 
 #### My Post Install Configs
