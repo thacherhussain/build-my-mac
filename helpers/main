@@ -47,3 +47,4 @@ app_is_installed() {
 }
 
 export -f fancy_echo append_to_file brew_is_installed gem_install_or_update app_is_installed
+
