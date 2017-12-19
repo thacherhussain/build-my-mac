@@ -120,41 +120,32 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 
 #### Javascript
 
-- [node] - A JavaScript runtime built on Chrome's V8 JavaScript engine.
-- [nvm] - Node Version Manager: Simple bash script to manage multiple versions of node.
-
-[node]: https://nodejs.org/en/
-[nvm]: https://github.com/creationix/nvm
+- [node](https://nodejs.org/en/) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- [nvm](https://github.com/creationix/nvm) - Node Version Manager: Simple bash script to manage multiple versions of node.
 
 #### Python
 
-- [Python 3] - An interpreted, object-oriented, high-level programming language.
-- [Pyenv] - Simple Python version management.
-- [Virtualenvwrapper] - Wrappers for creating virtual environments and isolating dependencies.
-
-[Python 3]: https://www.python.org/download/releases/3.0/
-[Pyenv]: https://github.com/yyuu/pyenv
-[Virtualenvwrapper]: https://virtualenvwrapper.readthedocs.io/en/latest/
+- [Python 3](https://www.python.org/download/releases/3.0/) - An interpreted, object-oriented, high-level programming language.
+- [Pyenv](https://github.com/yyuu/pyenv) - Simple Python version management.
+- [Virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) - Wrappers for creating virtual environments and isolating dependencies.
 
 #### Ruby
 
 - [Ruby](https://www.ruby-lang.org/en/) - A dynamic, open source programming language with a focus on simplicity and productivity -- MINASWAN
 - [rvm](https://rvm.io/) - Ruby Version Manager: Simple script to mange multiple versions of Ruby.
 
-
 #### Homebrew
 
 - [Homebrew](http://brew.sh/) - Homebrew installs the stuff you need that Apple didn’t.
-- [ctags](http://ctags.sourceforge.net/) - Indexes language objects in source files so your text editor can quickly reference them.
 - [git](https://git-scm.com/) - Open source version control system | update.
 - [git-secrets](https://github.com/awslabs/git-secrets) - Prevents you from committing secrets and creds into git repositories.
-- [Gradle](http://www.gradle.org/)
+- [gradle](http://www.gradle.org/)
 - [heroku-toolbelt](https://devcenter.heroku.com/articles/heroku-cli) - A Heroku CLI.
-- [httpie](https://httpie.org/) - Command line HTTP client with an intuitive UI, JSON support, syntax highlighting.
 - [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface.
 - [postgresql](https://www.postgresql.org/) - An open source relational database management system (DBMS).
 - [mySQL](https://www.mysql.com/) - Another popular open source database  
 - [z](https://github.com/rupa/z) - A more convenient `cd` which tracks your most used directories, based on 'frecency'.
+- [vim](http://www.vim.org/)
 
 #### Shell
 
@@ -163,35 +154,34 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 - [zsh](http://www.zsh.org/) - An interactive UNIX shell.
 
 #### Apps - Homebrew Cask
-- [java]
 - [Atom](https://atom.io/) - GitHub's open source text editor
 - [Alfred](https://www.alfredapp.com/) - Mac Spotlight replacement with more custom and productive actions to control your Mac.
-- [Bartender]
-- [Duet]
+- [Bartender](https://www.macbartender.com/)
+- [Duet](https://www.duetdisplay.com/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/products/) - Mozilla's web browser.
 - [Firefox Developer Edition]
 - [Google chrome](https://www.google.com/chrome/) - Google's web browser.
-- [Google Drive]
+- [Google Drive](https://www.google.com/drive/download/)
 - [iterm2](https://www.iterm2.com/) - A terminal emulator and replacement for Mac's default Terminal app.
-- [JetBrains Toolbox]
-- [Join.me]
-- [jumpcut]
+- [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [JetBrains Toolbox](https://www.jetbrains.com/toolbox/)
+- [Join.me](http://join.me)
+- [jumpcut](http://jumpcut.sourceforge.net/)
 - [MailButler](https://www.mailbutler.io)
-- [Minecraft]
-- [Microsoft Office]
-- [mySQL Workbench]
+- [Minecraft](https://minecraft.net/en-us/)
+- [Microsoft Office](https://www.microsoft.com/en-us/store/b/office?icid=CNavSoftwareOffice&activetab=tab%3ahomeorpersonal)
+- [mySQL Workbench](https://www.mysql.com/products/workbench/)
 - [Slack](https://slack.com/) - A messaging app
-- [Spectacle]
-- [Spotify]
-- [Sketch]
-- [Skype]
+- [Spectacle](https://www.spectacleapp.com/)
+- [Spotify](http://spotify.com)
+- [Sketch](sketchapp.com)
+- [Skype](http://www.skype.com)
 
 #### App Store - Homebrew Mas
 
 - [Evernote](https://evernote.com/) - Note manager app.
 - [Pocket](https://getpocket.com/) - Article saver/offline reader.
 - [Sip](http://sipapp.io/) - Color picker.
-- [Tweetbot]
 - [Xcode](https://developer.apple.com/xcode/)- Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
 
 *If you are going to test this out a few times it is recommended that you download the dmg for Xcode and preinstall it from a usb drive rather than having to download it each time*
@@ -202,7 +192,6 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 #### My "After-Market" Adds
 
 For Java Environment:
-
 - Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 - [Java8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [Gradle](http://www.gradle.org/): *Added to brew packages
