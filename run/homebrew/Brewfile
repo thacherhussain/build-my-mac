@@ -6,10 +6,10 @@ tap 'caskroom/versions'
 tap 'homebrew/services'
 
 # brew is used for installing MacOS dependencies/binaries
-brew 'cmake'
 brew 'bash'
 brew 'git'
 brew 'git-secrets'
+brew 'gradle'
 brew 'heroku-toolbelt'
 
 brew 'postgresql'
