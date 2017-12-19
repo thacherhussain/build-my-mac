@@ -9,7 +9,7 @@ tap 'homebrew/services'
 brew 'bash'
 brew 'git'
 brew 'git-secrets'
-brew 'java8'
+# brew 'java8'
 brew 'gradle'
 brew 'heroku-toolbelt'
 
