@@ -22,3 +22,6 @@ brew 'z'
 
 # start psql cluster
 # brew services start postgresql
+
+# start mysql cluster
+# brew services start mysql
