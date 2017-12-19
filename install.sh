@@ -16,8 +16,7 @@ source ./run/zsh/setup
 
 source ./run/homebrew/setup
 
-source ./run/vim/setup
-source ./run/tmux/setup
+# source ./run/vim/setup
 
 source ./run/node/setup
 source ./run/python/setup

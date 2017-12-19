@@ -31,6 +31,39 @@ For example in the *zsh* module both *antigen* (my personal preference) and *oh-
 
 <hr>
 
+#### Quick Reformating Guide. 💾
+
+Obviously, back up all the files you don't want to have blown away before going through this process.
+
+- Restart your computer and hold down `⌘ + r`.
+- Once you see the white  logo and a progress bar you can let go of `⌘ + r`
+- The "macOS Utilities" menu will pop up. Select the "Disk Utility" option from the list.
+- From the sidebar labeled "Internal" click on sub hardrive icon labeled "Macintosh HD"
+- From the row of icons at the top, click "Erase"
+- A popup menu will appear with a field for the "Name" and "Format".
+  Just leave the defaults and click the "Erase" button in the bottom right.
+- Once it goes through its speel, click "Done"
+- Close the Disk Utility window to get back to the "macOS Utilities" window.
+- Now choose the option in the list labeled "Reinstall macOS" and click "Continue"
+- From here it will guide you through the steps to a fresh install.
+
+**If you are bothered by this, now is the time to update the trackpad to use single tap to click**
+
+#### Update Operating System
+
+Go to App Store and run any operating system updates
+
+#### XCode
+
+Install XCode from the AppStore
+
+Install XCode Command Line Tools from terminal: `xcode-select --install`
+
+Accept the Xcode agreement from the terminal: `xcodebuild -license accept`
+
+**Open XCode to see/accept any additional requirements or install any additional components**
+
+
 ## Install Instructions
 
 ### 💾 Download...
@@ -53,14 +86,9 @@ Moves into */Projects* directory and untars the tar downlaoded file.
 cd ~/Projects && mv MrJadaml* dotfiles
 ```
 
-Changes the name of the untared directory from "MrJadaml-mac-maker-[SHA]" to "dotfiles"
+Changes the name of the untared directory from "thacherT1D-mac-maker-[SHA]" to "dotfiles"
 
-### ❄️ Personalize...
 
-Once the project is copied I suggest you rummage through it and make any modifications to suit your personal preferences.
-
-There is an optional Brew mas setup for Apple Store apps that you will be prompted about durring installation.
-Please have your email and password for the Apple Store ready.
 
 ### 📝 Install...
 
@@ -78,45 +106,6 @@ source install.sh
 
 When it promts you to enter your password, be sure to check if it is asking for your computer password or your appleID password.
 
-#### Accept Xcode Agreement
-
-To accept the Xcode agreement from the terminal, run the following command in your terminal:
-
-```
-sudo xcodebuild -license accept
-```
-
-#### ␛ Vim & Tmux Setup...
-
-##### Plugins Install
-
-For those who are using Vim, once the main install is finished, open up the *.vimrc* file with Vim.
-
-```sh
-vim ~/.vimrc
-```
-
-And while in vim install all the Vundle packages.
-
-```sh
-:PluginInstall
-```
-
-##### YouCompleteMe config
-
-For those using the YouCompleteMe plugin with Vim you will need to [run a couple additional commands](https://github.com/Valloric/YouCompleteMe#mac-os-x) after you install your plugins.
-Move into the YouCompleteMe binary directory:
-
-```sh
-cd ~/.vim/bundle/YouCompleteMe
-```
-
-The "tern" flag will provide JS support.
-
-```sh
-# for JavaScript support:
-./install.py --tern-completer
-```
 
 ##### Powerline fonts config
 
@@ -132,146 +121,112 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 
 #### Javascript
 
-- [node] - A JavaScript runtime built on Chrome's V8 JavaScript engine.
-- [nvm] - Node Version Manager: Simple bash script to manage multiple versions of node.
-
-[node]: https://nodejs.org/en/
-[nvm]: https://github.com/creationix/nvm
+- [node](https://nodejs.org/en/) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
+- [nvm](https://github.com/creationix/nvm) - Node Version Manager: Simple bash script to manage multiple versions of node.
 
 #### Python
 
-- [Python 3] - An interpreted, object-oriented, high-level programming language.
-- [Pyenv] - Simple Python version management.
-- [Virtualenvwrapper] - Wrappers for creating virtual environments and isolating dependencies.
-
-[Python 3]: https://www.python.org/download/releases/3.0/
-[Pyenv]: https://github.com/yyuu/pyenv
-[Virtualenvwrapper]: https://virtualenvwrapper.readthedocs.io/en/latest/
+- [Python 3](https://www.python.org/download/releases/3.0/) - An interpreted, object-oriented, high-level programming language.
+- [Pyenv](https://github.com/yyuu/pyenv) - Simple Python version management.
+- [Virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) - Wrappers for creating virtual environments and isolating dependencies.
 
 #### Ruby
 
-- [Ruby] - A dynamic, open source programming language with a focus on simplicity and productivity -- MINASWAN
-- [rvm] - Ruby Version Manager: Simple script to mange multiple versions of Ruby.
-
-[Ruby]: https://www.ruby-lang.org/en/
-[rvm]: https://rvm.io/
+- [Ruby](https://www.ruby-lang.org/en/) - A dynamic, open source programming language with a focus on simplicity and productivity -- MINASWAN
+- [rvm](https://rvm.io/) - Ruby Version Manager: Simple script to mange multiple versions of Ruby.
 
 #### Homebrew
 
-- [Homebrew] - Homebrew installs the stuff you need that Apple didn’t.
-- [ctags] - Indexes language objects in source files so your text editor can quickly reference them.
-- [git] - Open source version control system | update.
-- [git-secrets] - Prevents you from committing secrets and creds into git repositories.
-- [heroku-toolbelt] - A Heroku CLI.
-- [httpie] - Command line HTTP client with an intuitive UI, JSON support, syntax highlighting.
-- [imagemagick] - Create, edit, compose, or convert bitmap images.
-- [mas] - Mac App Store command line interface.
-- [mono] - Open source project to create Ecma compliant, .NET tools for C#.
-- [openssl] - Open source toolkit for Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols.
-- [phantomjs] - Headless web browser scriptable with a JavaScript API.
-- [postgresql] - An open source relational database management system (DBMS).
-- [reattach-to-user-namespace] - Path to enable access to OSX pasteboard for programs run under tmux.
-- [redis] - Open source in-memory data structure store, used as a database, cache and message broker.
-- [tmux] - A terminal multiplexer.
-- [vim] - Highly configurable text editor built in with most UNIX systems | update.
-- [wget] - A non-interactive CLI for retrieving files using HTTP, HTTPS and FTP.
-- [z] - A more convenient `cd` which tracks your most used directories, based on 'frecency'.
-
-[Homebrew]: http://brew.sh/
-[ctags]: http://ctags.sourceforge.net/
-[git]: https://git-scm.com/
-[git-secrets]: https://github.com/awslabs/git-secrets
-[heroku-toolbelt]: https://devcenter.heroku.com/articles/heroku-cli
-[httpie]: https://httpie.org/
-[imagemagick]: https://www.imagemagick.org/script/index.php
-[mas]: https://github.com/mas-cli/mas
-[mono]: http://www.mono-project.com/
-[openssl]: https://www.openssl.org/
-[phantomjs]: http://phantomjs.org/
-[postgresql]: https://www.postgresql.org/
-[reattach-to-user-namespace]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
-[redis]: https://redis.io/
-[tmux]: https://tmux.github.io/
-[vim]: http://www.vim.org/
-[wget]: https://www.gnu.org/software/wget/
-[z]: https://github.com/rupa/z
+- [Homebrew](http://brew.sh/) - Homebrew installs the stuff you need that Apple didn’t.
+- [git](https://git-scm.com/) - Open source version control system | update.
+- [git-secrets](https://github.com/awslabs/git-secrets) - Prevents you from committing secrets and creds into git repositories.
+- [gradle](http://www.gradle.org/)
+- [heroku-toolbelt](https://devcenter.heroku.com/articles/heroku-cli) - A Heroku CLI.
+- [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface.
+- [postgresql](https://www.postgresql.org/) - An open source relational database management system (DBMS).
+- [mySQL](https://www.mysql.com/) - Another popular open source database  
+- [z](https://github.com/rupa/z) - A more convenient `cd` which tracks your most used directories, based on 'frecency'.
+- [vim](http://www.vim.org/)
 
 #### Shell
 
-- [antigen] - A plugin manager for zsh, inspired by oh-my-zsh and vundle.
-- [bash] - Built-in shell | update.
-- [oh-my-zsh] - Community-driven framework for managing your zsh configuration.
-- [zsh] - An interactive UNIX shell.
-
-[antigen]: https://github.com/zsh-users/antigen
-[bash]: https://www.gnu.org/software/bash/
-[oh-my-zsh]: https://github.com/robbyrussell/oh-my-zsh
-[zsh]: http://www.zsh.org/
+- [bash](https://www.gnu.org/software/bash/) - Built-in shell | update.
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) - Community-driven framework for managing your zsh configuration.
+- [zsh](http://www.zsh.org/) - An interactive UNIX shell.
 
 #### Apps - Homebrew Cask
-
-- [Atom] - GitHub's open source text editor
-- [Alfred] - Mac Spotlight replacement with more custom and productive actions to control your Mac.
-- [CloudApp] - Sharable screen capture tool with terminal integration.
-- [Dash] - Offline access to 150+ API documentation sets plus script manager.
-- [Dropbox] - Cloud storage.
-- [Firefox] - Mozilla's web browser.
-- [Google chrome] - Google's web browser.
-- [Google chrome canary] - Google's web browser with beta features.
-- [iterm2] - A terminal emulator and replacement for Mac's default Terminal app.
-- [Screenhero] - Coding oriented screen share with multi mouse/cursor.
-- [Slack] - A messaging app (corporate IRC 👔).
-- [Jumpcut] - Keep a record of things that you have copied (clipboard buffering).
-
-[Atom]: https://atom.io/
-[Alfred]: https://www.alfredapp.com/
-[CloudApp]: https://www.getcloudapp.com/
-[Dash]: https://kapeli.com/dash
-[Dropbox]: https://www.dropbox.com/
-[Firefox]: https://www.mozilla.org/en-US/firefox/products/
-[Google chrome]: https://www.google.com/chrome/
-[Google chrome canary]: https://www.google.com/chrome/browser/canary.html
-[iterm2]: https://www.iterm2.com/
-[Screenhero]: https://screenhero.com/
-[Slack]: https://slack.com/
-[Jumpcut]: http://jumpcut.sourceforge.net/
+- [Atom](https://atom.io/) - GitHub's open source text editor
+- [Alfred](https://www.alfredapp.com/) - Mac Spotlight replacement with more custom and productive actions to control your Mac.
+- [Bartender](https://www.macbartender.com/)
+- [Duet](https://www.duetdisplay.com/)
+- [Firefox](https://www.mozilla.org/en-US/firefox/products/) - Mozilla's web browser.
+- [Firefox Developer Edition]
+- [Google chrome](https://www.google.com/chrome/) - Google's web browser.
+- [Google Drive](https://www.google.com/drive/download/)
+- [iterm2](https://www.iterm2.com/) - A terminal emulator and replacement for Mac's default Terminal app.
+- [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [JetBrains Toolbox](https://www.jetbrains.com/toolbox/)
+- [Join.me](http://join.me)
+- [jumpcut](http://jumpcut.sourceforge.net/)
+- [MailButler](https://www.mailbutler.io)
+- [Minecraft](https://minecraft.net/en-us/)
+- [Microsoft Office](https://www.microsoft.com/en-us/store/b/office?icid=CNavSoftwareOffice&activetab=tab%3ahomeorpersonal)
+- [mySQL Workbench](https://www.mysql.com/products/workbench/)
+- [Slack](https://slack.com/) - A messaging app
+- [Spectacle](https://www.spectacleapp.com/)
+- [Spotify](http://spotify.com)
+- [Sketch](sketchapp.com)
+- [Skype](http://www.skype.com)
 
 #### App Store - Homebrew Mas
 
-- [Evernote] - Note manager app.
-- [Memory Clean] - Memory manager for your toolbar.
-- [Monodraw] - Powerful ASCII art editor designed for the Mac.
-- [Moom] - Window manager.
-- [Pixelmator] - Photo editor.
-- [Pocket] - Article saver/offline reader.
-- [Sip] - Color picker.
-- [SnappyApp] - Screen capture tool that leaves cropped capture ontop of all windows.
-- [Xcode] - Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
+- [Evernote](https://evernote.com/) - Note manager app.
+- [Pocket](https://getpocket.com/) - Article saver/offline reader.
+- [Sip](http://sipapp.io/) - Color picker.
+- [Xcode](https://developer.apple.com/xcode/)- Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
 
-[Evernote]: https://evernote.com/
-[Memory Clean]: https://itunes.apple.com/us/app/memory-clean-monitor-free/id451444120?mt=12
-[Monodraw]: https://monodraw.helftone.com/
-[Moom]: https://manytricks.com/moom/
-[Pixelmator]: http://www.pixelmator.com/mac/
-[Pocket]: https://getpocket.com/
-[Sip]: http://sipapp.io/
-[SnappyApp]: http://snappy-app.com/
-[Xcode]: https://developer.apple.com/xcode/
+*If you are going to test this out a few times it is recommended that you download the dmg for Xcode and preinstall it from a usb drive rather than having to download it each time*
 
 <hr>
 
-#### Quick Reformating Guide. 💾
 
-Obviously, back up all the files you don't want to have blown away before going through this process.
+#### My "After-Market" Adds
 
-- Restart your computer and hold down `⌘ + r`.
-- Once you see the white  logo and a progress bar you can let go of `⌘ + r`
-- The "macOS Utilities" menu will pop up. Select the "Disk Utility" option from the list.
-- From the sidebar labeled "Internal" click on sub hardive icon labled "Macintosh HD"
-- From the row of icons at the top, click "Erase"
-- A popup menu will appear with a field for the "Name" and "Format".
-  Just leave the defaults and click the "Erase" button in the bottom right.
-- Once it goes through its speel, click "Done"
-- Close the Disk Utility window to get back to the "macOS Utilities" window.
-- Now choose the option in the list labled "Reinstall macOS" and click "Continue"
-- From here it will guide you through the steps to a fresh install.
+For Java Environment:
+- Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+- [Java8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [Gradle](http://www.gradle.org/): *Added to brew packages
+  - Run `brew install gradle`
+  - To confirm, run `gradle -version`. The computer should display `Gradle 2.XX`.
+
+
+#### My Post Install Configs
+- Dock Icons and Order
+- Items to load on startup
+- Desktop image (photos)
+
+Other applications:
+- diasend
+- Craft Manager
+
+- zsh theme: cobalt2 (https://github.com/wesbos/Cobalt2-iterm) + powerline font (https://github.com/powerline/fonts)
+
+atom plugins:
+atom-beautify
+atom-bootstrap3
+atom-javascript-snippets
+auto-indent
+*intentions
+*javascript-snippets
+language-babel
+less-autocompile
+linter
+linter-ui-default
+open-in-browsers
+
+autosave on focus
+
+chrome extensions
+chrome logins
+add all accounts to "Internet Accounts"
+update trackpad to include single click
