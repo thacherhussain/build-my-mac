@@ -1,6 +1,6 @@
 # cask is used for installing Mac applications
 
-cask 'java8'
+# cask 'java8'
 cask 'atom'
 cask 'alfred'
 
