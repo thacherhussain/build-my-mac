@@ -3,8 +3,10 @@
 
 cask 'atom'
 cask 'alfred'
+
 cask 'bartender'
 cask 'duet'
+
 cask 'firefox'
 cask 'firefoxdeveloperedition'
 cask 'flux'
@@ -26,3 +28,4 @@ cask 'spectacle'
 cask 'spotify'
 cask 'sketch'
 cask 'skype'
+

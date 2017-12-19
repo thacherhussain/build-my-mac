@@ -12,7 +12,7 @@ Likewise, this structure lends itself to being extended with any modules of your
 
 The *install.sh* script is what will be run upon executing the start-up command listed below.
 This script will get Brew up and running on your machine 🍻.
-The Brewfile will install a number of binarys, libraries and applications durring the Brew install process.
+The Brewfile will install a number of binarys, libraries and applications during the Brew install process.
 It is recommended that you look over this file and the supporting *brew-casks* and *brew-mas* files to customize the setup to your liking. Any applications that are paid apps must be purchased with the apple id you are using before running the script.
 Note that Xcode is one of the items included in the `mas` bundle.
 It has been isolated to its own *xcode-install* file as a convenience to allow for an optional install durring run time,
@@ -71,7 +71,7 @@ Accept the Xcode agreement from the terminal: `xcodebuild -license accept`
 Run the following commands:
 
 ```sh
-curl -L https://api.github.com/repos/thacherT1D/mac-maker/tarball --create-dirs -o ~/Projects/dotfiles.tar.gz
+curl -L https://api.github.com/repos/MrJadaml/mac-maker/tarball --create-dirs -o ~/Projects/dotfiles.tar.gz
 ```
 
 Pulls down tar file of this repo onto your machine while creating a */Projects* directory.
@@ -83,10 +83,11 @@ tar -zxvf ~/Projects/dotfiles.tar.gz -C ~/Projects/
 Moves into */Projects* directory and untars the tar downlaoded file.
 
 ```sh
-cd ~/Projects && mv thacherT1D* dotfiles
+cd ~/Projects && mv MrJadaml* dotfiles
 ```
 
 Changes the name of the untared directory from "thacherT1D-mac-maker-[SHA]" to "dotfiles"
+
 
 
 ### 📝 Install...
