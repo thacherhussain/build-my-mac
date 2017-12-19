@@ -1,6 +1,6 @@
 # cask is used for installing Mac applications
 
-cask 'java'
+
 cask 'atom'
 cask 'alfred'
 cask 'bartender'
@@ -12,6 +12,7 @@ cask 'google-chrome'
 cask 'google-backup-and-sync'
 # cask 'gradle'
 cask 'iterm2'
+cask 'java'
 cask 'jetbrains-toolbox'
 cask 'joinme'
 cask 'jumpcut'
