@@ -196,6 +196,9 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 For Java Environment:
 - Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 
+#### Next Planned Additions
+- React Build Tools
+- Android Studio Configuration
 
 #### My Post Install Configs
 - Dock Icons and Order
