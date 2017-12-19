@@ -71,7 +71,7 @@ Accept the Xcode agreement from the terminal: `xcodebuild -license accept`
 Run the following commands:
 
 ```sh
-curl -L https://api.github.com/repos/MrJadaml/mac-maker/tarball --create-dirs -o ~/Projects/dotfiles.tar.gz
+curl -L https://api.github.com/repos/thacherT1D/mac-maker-2/tarball --create-dirs -o ~/Projects/dotfiles.tar.gz
 ```
 
 Pulls down tar file of this repo onto your machine while creating a */Projects* directory.
@@ -83,7 +83,7 @@ tar -zxvf ~/Projects/dotfiles.tar.gz -C ~/Projects/
 Moves into */Projects* directory and untars the tar downlaoded file.
 
 ```sh
-cd ~/Projects && mv MrJadaml* dotfiles
+cd ~/Projects && mv thacherT1D* dotfiles
 ```
 
 Changes the name of the untared directory from "thacherT1D-mac-maker-[SHA]" to "dotfiles"
