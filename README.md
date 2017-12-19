@@ -185,14 +185,7 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 
 *If you are going to test this out a few times it is recommended that you download the dmg for Xcode and preinstall it from a usb drive rather than having to download it each time*
 
-<hr>
-
-##### Notes from Last Run: 
-- Hombrew Link Failure
-- Adjust order or placement Brewfile or Brew Cask for Java8 in order to have it install before gradle
-
 #### My "After-Market" Adds
-
 For Java Environment:
 - Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 
@@ -200,33 +193,40 @@ For Java Environment:
 - React Build Tools
 - Android Studio Configuration
 
+<hr>
+
+##### Notes from Last Run: 
+- Hombrew Link Failure
+- Adjust order or placement Brewfile or Brew Cask for Java8 in order to have it install before gradle
+- Python version failure
+- Use of Pip command failure
+- OSX time machine settings commented out
+Change to mine:
+- dock size
+- highlight color
+- key repeat speed
+
 #### My Post Install Configs
 - Dock Icons and Order
-- Items to load on startup
-- Desktop image (photos)
+- Startup Items
+- All Accounts
+- Slack Teams
+- Desktop image
+- update trackpad to include single click
 
-Other applications:
-- diasend
-- Craft Manager
+- Sketch Craft Manager
+- Sketch Plugins: 
+  - Diverse UI
+  - Anima Launchpad
 
-- zsh theme: cobalt2 (https://github.com/wesbos/Cobalt2-iterm) + powerline font (https://github.com/powerline/fonts)
+zsh theme: cobalt2 (https://github.com/wesbos/Cobalt2-iterm) + powerline font (https://github.com/powerline/fonts)
 
-atom plugins:
-atom-beautify
-atom-bootstrap3
-atom-javascript-snippets
-auto-indent
-*intentions
-*javascript-snippets
-language-babel
-less-autocompile
-linter
-linter-ui-default
-open-in-browsers
+Atom plugins:
+- atom-beautify
+- atom-bootstrap3
+- atom-javascript-snippets
+- auto-indent
+- open-in-browsers
+- autosave on focus
 
-autosave on focus
-
-chrome extensions
-chrome logins
-add all accounts to "Internet Accounts"
-update trackpad to include single click
+Chrome logins and extensions
