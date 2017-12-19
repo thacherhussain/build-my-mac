@@ -69,7 +69,7 @@ Open XCode to see/accept any additional requirements or install any additional c
 Run the following commands:
 
 ```sh
-curl -L https://api.github.com/repos/thacherT1D/mac-maker-2/tarball --create-dirs -o ~/Projects/dotfiles.tar.gz
+curl -L https://api.github.com/repos/thacherT1D/build-my-mac/tarball --create-dirs -o ~/Projects/dotfiles.tar.gz
 ```
 
 Pulls down tar file of this repo onto your machine while creating a */Projects* directory.
@@ -84,7 +84,7 @@ Moves into */Projects* directory and untars the tar downlaoded file.
 cd ~/Projects && mv thacherT1D* dotfiles
 ```
 
-Changes the name of the untared directory from "thacherT1D-mac-maker-[SHA]" to "dotfiles"
+Changes the name of the untared directory from "thacherT1D-build-my-mac-[SHA]" to "dotfiles"
 
 
 
@@ -115,7 +115,7 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 
 <hr>
 
-## The Manifest 📕
+## The Manifest
 
 #### Javascript
 
