@@ -1,6 +1,6 @@
-# 🔧 Welcome to My Mac-Maker 💻
+# Build My Mac
 
-This is, yet another, dev environment start-up script.
+Dev environment start-up script - born from [MrJadaml's mac-maker](https://github.com/MrJadaml/mac-maker)
 My goal here is to break down the particular items being installed into individual modules.
 Each module is then sourced from the main *install.sh* script with `source ./run/[MODULE]/setup`.
 This makes it real easy to remove anything you do not want without worry of breaking other parts of this build.
@@ -8,7 +8,7 @@ Likewise, this structure lends itself to being extended with any modules of your
 
 <hr>
 
-## Project Organization
+## Organization
 
 The *install.sh* script is what will be run upon executing the start-up command listed below.
 This script will get Brew up and running on your machine.
@@ -22,12 +22,10 @@ After the Brew process is finished the *install.sh* script will begin to source 
 If you do not wish to have a particular module installed on your machine simply delete,
 or comment out, the line in the *install.sh* script where it is sourced.
 
-All modules are organized together in the **run** 📂.
+All modules are organized together in the **run** file.
 In each of their respective directories lives a *setup* script, which is what is sourced in the main *install.sh* script.
 Some of the individual modules have additional dotfiles or supporting scripts files.
-These may be files that will be symlinked into your **HOME** 📂,
-provided as alternative install options, further modularization, or organizational purposes.
-For example in the *zsh* module both *antigen* (my personal preference) and *oh-my-zsh* are included (pick your ☠).
+These may be files that will be symlinked into your **HOME** file, provided as alternative install options, further modularization, or organizational purposes.
 
 <hr>
 
@@ -47,7 +45,7 @@ Obviously, back up all the files you don't want to have blown away before going 
 - Now choose the option in the list labeled "Reinstall macOS" and click "Continue"
 - From here it will guide you through the steps to a fresh install.
 
-**If you are bothered by this, now is the time to update the trackpad to use single tap to click**
+**Update the trackpad to use single tap to click**
 
 #### Update Operating System
 
