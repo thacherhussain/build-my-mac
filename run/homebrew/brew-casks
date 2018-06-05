@@ -3,10 +3,10 @@
 # cask 'java8'
 cask 'atom'
 cask 'alfred'
-
+cask 'airmail-amt'
 cask 'bartender'
+cask 'dayone-cli'
 cask 'duet'
-
 cask 'firefox'
 cask 'firefoxdeveloperedition'
 cask 'flux'
@@ -26,4 +26,5 @@ cask 'spectacle'
 cask 'spotify'
 cask 'sketch'
 cask 'skype'
+cask 'things'
 
