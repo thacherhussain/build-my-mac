@@ -78,7 +78,7 @@ Pulls down tar file of this repo onto your machine while creating a */Projects* 
 tar -zxvf ~/Projects/dotfiles.tar.gz -C ~/Projects/
 ```
 
-Moves into */Projects* directory and untars the tar downlaoded file.
+Moves into */Projects* directory and untars the tar downloaded file.
 
 ```sh
 cd ~/Projects && mv thacherT1D* dotfiles
