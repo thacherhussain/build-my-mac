@@ -199,8 +199,6 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 -[Things 3]()
 -[DayOne]()
 -[Notability]()
--[Pixelmator]()
--[WhatsApp]()
 
 #### And then... 
 For Java Environment:
@@ -245,6 +243,7 @@ Other software (possible installs):
 - StepShot Guides
 - Tableau
 - Virtual Box
+- What's App
 - Zoom.us
 
 <hr>
