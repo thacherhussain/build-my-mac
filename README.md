@@ -49,7 +49,7 @@ Obviously, back up all the files you don't want to have blown away before going 
 
 #### Update Operating System
 
-Go to App Store and run any operating system updates
+Go to App Store and run any operating system updates (this may take a bunch of iterations)
 
 #### XCode
 
@@ -61,6 +61,10 @@ Accept the Xcode agreement from the terminal: `xcodebuild -license accept`
 
 Open XCode to see/accept any additional requirements or install any additional components
 
+#### Java 8 
+
+Download and install [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+(Manually just seems to be the best way to do this because of dependency problems I've run into)
 
 ## Install Instructions
 
@@ -104,6 +108,7 @@ source install.sh
 
 When it promts you to enter your password, be sure to check if it is asking for your computer password or your appleID password.
 
+**To use your computer comfortably now, open the following things manually: alfred, jumpcut, spectacle**
 
 ##### Powerline fonts config
 
@@ -153,20 +158,20 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 - [zsh](http://www.zsh.org/) - An interactive UNIX shell.
 
 #### Apps - Homebrew Cask
+- [1Password](http://wwww.1password.com)
 - [Atom](https://atom.io/) - GitHub's open source text editor
 - [Alfred](https://www.alfredapp.com/) - Mac Spotlight replacement with more custom and productive actions to control your Mac.
 - [Bartender](https://www.macbartender.com/)
 - [Duet](https://www.duetdisplay.com/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/products/) - Mozilla's web browser.
 - [Firefox Developer Edition]
+- [Filezilla]()
 - [Google chrome](https://www.google.com/chrome/) - Google's web browser.
 - [Google Drive](https://www.google.com/drive/download/)
 - [iterm2](https://www.iterm2.com/) - A terminal emulator and replacement for Mac's default Terminal app.
-- [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - [JetBrains Toolbox](https://www.jetbrains.com/toolbox/)
 - [Join.me](http://join.me)
 - [jumpcut](http://jumpcut.sourceforge.net/)
-- [MailButler](https://www.mailbutler.io)
 - [Minecraft](https://minecraft.net/en-us/)
 - [Microsoft Office](https://www.microsoft.com/en-us/store/b/office?icid=CNavSoftwareOffice&activetab=tab%3ahomeorpersonal)
 - [mySQL Workbench](https://www.mysql.com/products/workbench/)
@@ -177,56 +182,77 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 - [Skype](http://www.skype.com)
 
 #### App Store - Homebrew Mas
-
+- [Airmail](http://wwww.airmailapp.com)
 - [Evernote](https://evernote.com/) - Note manager app.
 - [Pocket](https://getpocket.com/) - Article saver/offline reader.
 - [Sip](http://sipapp.io/) - Color picker.
 - [Xcode](https://developer.apple.com/xcode/)- Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
+-[Things 3]()
+-[DayOne]()
+-[Notability]()
+-[Pixelmator]()
+-[WhatsApp]()
 
-*If you are going to test this out a few times it is recommended that you download the dmg for Xcode and preinstall it from a usb drive rather than having to download it each time*
-
-#### My "After-Market" Adds
+#### And then... 
 For Java Environment:
 - Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+- Install [MySQL Workbench]()
 
-#### Next Planned Additions
-- React Build Tools
-- Android Studio Configuration
-
-<hr>
-
-##### Notes from Last Run: 
-- Hombrew Link Failure
-- Adjust order or placement Brewfile or Brew Cask for Java8 in order to have it install before gradle
-- Python version failure
-- Use of Pip command failure
-- OSX time machine settings commented out
-Change to mine:
-- dock size
-- highlight color
-- key repeat speed
-
-#### My Post Install Configs
+#### Post Script Installations and Configs
 - Dock Icons and Order
-- Startup Items
-- All Accounts
+- Startup Items 
+    - Background Tier: Alfred, Jumpcut, Bartender, Spectacle, RescueTime, Backup and Sync, Sip, Flux
+    - Foreground Tier: Airmail, Chrome, Slack, Things, Messages
+- Add Accounts to System Preferences
 - Slack Teams
-- Desktop image
-- update trackpad to include single click
-
-- Sketch Craft Manager
+- Update Desktop Image
+- Update trackpad to include single click (done above)
+- Chrome logins and extensions
 - Sketch Plugins: 
   - Diverse UI
   - Anima Launchpad
+- iTerm:
+  - zsh theme: cobalt2 (https://github.com/wesbos/Cobalt2-iterm)
+  - powerline font (https://github.com/powerline/fonts)
+- Atom plugins:
+  - atom-beautify
+  - atom-bootstrap3
+  - atom-javascript-snippets
+  - auto-indent
+  - open-in-browsers
+  - autosave on focus
 
-zsh theme: cobalt2 (https://github.com/wesbos/Cobalt2-iterm) + powerline font (https://github.com/powerline/fonts)
+Other software (possible installs): 
+**- MAMP**
+**- Astropad**
+- Caffeine
+**- Craft Manager**
+- Daisy Disk
+**- iGlasses**
+- Gitter
+- GluePrint
+- Nudg.it
+- SnagIt
+- StepShot Guides
+- Tableau
+- Virtual Box
+- Zoom.us
 
-Atom plugins:
-- atom-beautify
-- atom-bootstrap3
-- atom-javascript-snippets
-- auto-indent
-- open-in-browsers
-- autosave on focus
+<hr>
 
-Chrome logins and extensions
+#### Next Planned Additions
+- React Build Tools (Expo XDE)
+- Android Studio Configuration (+ Genymotion)
+
+<hr>
+
+##### Notes from Last Run:
+(Didn't happen again) - Hombrew Link Failure
+(Sorted) - Adjust order or placement Brewfile or Brew Cask for Java8 in order to have it install before gradle
+- Python version failure
+- Use of Pip command failure
+- OSX time machine settings commented out
+Change settings for:
+- dock size
+- highlight color
+- key repeat speed
