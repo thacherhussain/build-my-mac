@@ -1,14 +1,15 @@
 # cask is used for installing Mac applications
 
 # cask 'java8'
+cask '1password'
+cask 'airmail-beta'
 cask 'atom'
 cask 'alfred'
-cask 'airmail-amt'
 cask 'bartender'
 cask 'dayone-cli'
 cask 'duet'
 cask 'firefox'
-cask 'firefoxdeveloperedition'
+cask 'firefox-developer-edition'
 cask 'flux'
 cask 'google-chrome'
 cask 'google-backup-and-sync'
@@ -26,5 +27,4 @@ cask 'spectacle'
 cask 'spotify'
 cask 'sketch'
 cask 'skype'
-cask 'things'
 
