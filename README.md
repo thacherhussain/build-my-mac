@@ -109,6 +109,15 @@ source install.sh
 When it promts you to enter your password, be sure to check if it is asking for your computer password or your appleID password.
 
 **To use your computer comfortably now, open the following things manually: alfred, jumpcut, spectacle**
+#### Terminal Config
+
+##### Oh My Zsh
+[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+
+#### .zshrc file config with custom scripts
+(Pending)
 
 ##### Powerline fonts config
 
