@@ -2,7 +2,6 @@
 
 # cask 'java8'
 cask '1password'
-cask 'airmail-beta'
 cask 'atom'
 cask 'alfred'
 cask 'bartender'
