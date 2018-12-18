@@ -136,16 +136,16 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 - [node](https://nodejs.org/en/) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
 - [nvm](https://github.com/creationix/nvm) - Node Version Manager: Simple bash script to manage multiple versions of node.
 
-#### Python
+~~#### Python
 
-- [Python 3](https://www.python.org/download/releases/3.0/) - An interpreted, object-oriented, high-level programming language.
-- [Pyenv](https://github.com/yyuu/pyenv) - Simple Python version management.
-- [Virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) - Wrappers for creating virtual environments and isolating dependencies.
+~~- [Python 3](https://www.python.org/download/releases/3.0/) - An interpreted, object-oriented, high-level programming language.~~
+~~- [Pyenv](https://github.com/yyuu/pyenv) - Simple Python version management.~~
+~~- [Virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) - Wrappers for creating virtual environments and isolating dependencies.~~
 
-#### Ruby
+~~#### Ruby
 
-- [Ruby](https://www.ruby-lang.org/en/) - A dynamic, open source programming language with a focus on simplicity and productivity -- MINASWAN
-- [rvm](https://rvm.io/) - Ruby Version Manager: Simple script to mange multiple versions of Ruby.
+~~- [Ruby](https://www.ruby-lang.org/en/) - A dynamic, open source programming language with a focus on simplicity and productivity -- MINASWAN~~
+~~- [rvm](https://rvm.io/) - Ruby Version Manager: Simple script to mange multiple versions of Ruby.~~
 
 #### Homebrew
 
@@ -159,6 +159,11 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 - [mySQL](https://www.mysql.com/) - Another popular open source database  
 - [z](https://github.com/rupa/z) - A more convenient `cd` which tracks your most used directories, based on 'frecency'.
 - [vim](http://www.vim.org/)
+
+**New**
+- React
+- React Native 
+- Cocoa Pods
 
 #### Shell
 
@@ -180,7 +185,7 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 - [iterm2](https://www.iterm2.com/) - A terminal emulator and replacement for Mac's default Terminal app.
 - [JetBrains Toolbox](https://www.jetbrains.com/toolbox/)
 - [Join.me](http://join.me)
-- [jumpcut](http://jumpcut.sourceforge.net/)
+~~- [jumpcut](http://jumpcut.sourceforge.net/)~~
 - [Minecraft](https://minecraft.net/en-us/)
 - [Microsoft Office](https://www.microsoft.com/en-us/store/b/office?icid=CNavSoftwareOffice&activetab=tab%3ahomeorpersonal)
 - [mySQL Workbench](https://www.mysql.com/products/workbench/)
@@ -192,27 +197,28 @@ Then change the font to one of Powerline options. 13pt Cousine is a good choice.
 
 #### App Store - Homebrew Mas
 - [Airmail](http://wwww.airmailapp.com)
-- [Evernote](https://evernote.com/) - Note manager app.
-- [Pocket](https://getpocket.com/) - Article saver/offline reader.
-- [Sip](http://sipapp.io/) - Color picker.
+~~- [Evernote](https://evernote.com/) - Note manager app.~~
+~~- [Pocket](https://getpocket.com/) - Article saver/offline reader.~~
+~~- [Sip](http://sipapp.io/) - Color picker.~~
 - [Xcode](https://developer.apple.com/xcode/)- Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
--[Things 3]()
+~~-[Things 3]()~~
 -[DayOne]()
 -[Notability]()
 
 #### And then... 
-For Java Environment:
-- Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
-- Install [MySQL Workbench]()
+~~For Java Environment:~~
+~~- Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)~~
+~~- Install [MySQL Workbench]()~~
 
 #### Post Script Installations and Configs
 - Dock Icons and Order
 - Startup Items 
-    - Background Tier: Alfred, Jumpcut, Bartender, Spectacle, RescueTime, Backup and Sync, Sip, Flux
-    - Foreground Tier: Airmail, Chrome, Slack, Things, Messages
+    - Background Tier: Alfred, ~~Jumpcut~~, Flycut, Bartender, Spectacle, RescueTime, Backup and Sync, ~~Sip, Flux~~
+- ~~Foreground Tier: Airmail, Chrome, Slack, Things, Messages~~
 - Add Accounts to System Preferences
 - Slack Teams
 - Update Desktop Image
+- Dark Mode
 - Update trackpad to include single click (done above)
 - Chrome logins and extensions
 - Sketch Plugins: 
@@ -230,27 +236,39 @@ For Java Environment:
   - autosave on focus
 
 Other software (possible installs): 
-**- MAMP**
+~~**- MAMP**~~
 **- Astropad**
-- Caffeine
+~~- Caffeine~~
 **- Craft Manager**
-- Daisy Disk
+~~- Daisy Disk~~
 **- iGlasses**
-- Gitter
-- GluePrint
-- Nudg.it
-- SnagIt
-- StepShot Guides
-- Tableau
-- Virtual Box
+~~- Gitter~~
+~~- GluePrint~~
+~~- Nudg.it~~
+~~- SnagIt~~
+~~- StepShot Guides~~
+~~- Tableau~~
+~~- Virtual Box~~
 - What's App
 - Zoom.us
+
+**New**
+- Bear
+- Setapp -> Sip
+- CleanMyMac (maybe through Setapp)
+- PDF Pen Pro
+- Adobe Illustrator
+- Keyboard Maestro
+- Text Expander
+- Flycut
+- Omnifocus
+
 
 <hr>
 
 #### Next Planned Additions
 - React Build Tools (Expo XDE)
-- Android Studio Configuration (+ Genymotion)
+- Android Studio and Configuration ~~(+ Genymotion)~~
 
 <hr>
 
@@ -262,5 +280,6 @@ Other software (possible installs):
 - OSX time machine settings commented out
 Change settings for:
 - dock size
+- dock to right side
 - highlight color
 - key repeat speed
