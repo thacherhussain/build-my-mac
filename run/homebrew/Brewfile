@@ -17,6 +17,7 @@ brew 'heroku/brew/heroku'
 brew 'postgresql'
 brew 'mysql'
 
+brew 'homebrew/cask-drivers/luna-display'
 
 
 # start psql cluster
