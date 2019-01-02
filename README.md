@@ -32,6 +32,7 @@ brew install gradle
 
 ```
 brew install heroku/brew/heroku
+brew 'homebrew/cask-drivers/luna-display'
 ```
 
 ```
@@ -64,12 +65,11 @@ git config --global user.email 'YOUR EMAIL ADDRESS'
 [Git Article on setting up SSH Keys](https://help.github.com/articles/connecting-to-github-with-ssh/)
 
 
-**To use your computer comfortably now, open the following things manually: alfred, flycut, spectacle**
-
-Keyboard > Turn off Apple Spotlight, change cmd + space to Alfred
-Turn Off Guest User
-
-And add alfred, flycut, spectacle to startup items
+**To use your computer comfortably now:**
+- Keyboard > Turn off Apple Spotlight, change cmd + space to Alfred
+- Turn Off Guest User, start up items: alfred, flycut, spectacle
+- Update Desktop Image
+- Dark Mode
 
 
 ### iTerm Config
@@ -87,8 +87,16 @@ Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell
 #### .zshrc file config with custom scripts
 (Pending)
 
+### Other Brew Casks
+```brew cask install astropad firefox google-backup-and-sync keyboard-maestro hazel jetbrains-toolbox minecraft microsoft-office mysqlworkbench rescuetime slack spotify skype whatsapp zoomus textexpander pdfpenpro```
+
 ### Mac Apps with Brew
 ```brew install mas```
+~~Pocket:  ```mas install 568494494```~~
+Airmail 3: ```mas install 918858936```
+Day One: ```mas install 1055511498```
+Notability: ```mas install 736189492```
+Bear: ```mas install 1091189122```
 
 ### Other Installs
 - Omnifocus (Mac App Store)
@@ -102,15 +110,10 @@ Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell
 - Dock Icons and Order
 - Startup Items 
     - Background Tier: Alfred, Flycut, Bartender, Spectacle, RescueTime, Backup and Sync
-- Add Accounts to System Preferences
+- Activate Accounts to System Preferences
 - Slack Teams
-- Update Desktop Image
-- Dark Mode
-- Update trackpad to include single click (done above)
+
 - Chrome logins and extensions
-- Sketch Plugins: 
-  - Diverse UI
-  - Anima Launchpad
 
 - Atom plugins:
   - atom-beautify
@@ -120,6 +123,8 @@ Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell
   - open-in-browsers
   - autosave on focus
 
+- Hazel
+- Keyboard Maestro
 
 <hr>
 
@@ -127,10 +132,7 @@ Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell
 ### Java (as needed/wanted)
 #### Java 8
 Download and install [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-(Manually just seems to be the best way to do this because of dependency problems I've run into)
 
-#### And then... 
-For Java Environment:
+##### And then... 
 - Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
-- Install [MySQL Workbench]()
 
