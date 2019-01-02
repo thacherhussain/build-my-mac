@@ -13,7 +13,7 @@ brew 'zsh'
 brew 'z'
 
 brew 'gradle'
-brew 'heroku-toolbelt'
+brew 'heroku/brew/heroku'
 brew 'postgresql'
 brew 'mysql'
 
