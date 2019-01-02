@@ -92,10 +92,15 @@ Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell
 
 ### Mac Apps with Brew
 ```brew install mas```
+
 ~~Pocket:  ```mas install 568494494```~~
+
 Airmail 3: ```mas install 918858936```
+
 Day One: ```mas install 1055511498```
+
 Notability: ```mas install 736189492```
+
 Bear: ```mas install 1091189122```
 
 ### Other Installs
