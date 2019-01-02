@@ -21,26 +21,30 @@ Open XCode to see/accept any additional requirements or install any additional c
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-```sh
+```
 brew install git vim bash zsh z postgresql mysql node watchman
 ```
 
-```sh
+```
 brew cask install java
 brew install gradle
 ```
 
-```sh
+```
 brew install heroku/brew/heroku
 ```
 
-```sh
+```
 brew cask install iterm2 spectacle alfred google-chrome flycut 1password atom
 ```
 
-```npm install -g react-native-cli```
+```
+npm install -g react-native-cli
+```
 
-```sudo gem install cocoapods```
+```
+sudo gem install cocoapods
+```
 
 ### Setup 1Password
 Sign in and shortcut set to option + space
@@ -57,13 +61,16 @@ git config --global user.email 'YOUR EMAIL ADDRESS'
 ```
 
 #### Setup Git SSH Keys
-[Git Article](https://help.github.com/articles/connecting-to-github-with-ssh/)
+[Git Article on setting up SSH Keys](https://help.github.com/articles/connecting-to-github-with-ssh/)
 
 
-**To use your computer comfortably now, open the following things manually: alfred, jumpcut, spectacle**
+**To use your computer comfortably now, open the following things manually: alfred, flycut, spectacle**
+
 Keyboard > Turn off Apple Spotlight, change cmd + space to Alfred
 Turn Off Guest User
-And add them to startup items
+
+And add alfred, flycut, spectacle to startup items
+
 
 ### iTerm Config
 
@@ -84,7 +91,7 @@ Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell
 ```brew install mas```
 
 ### Other Installs
-- Omnifocus
+- Omnifocus (Mac App Store)
 - [Setapp](https://setapp.com)
     -> Sip, CleanMyMac, Bartender, iStat
 - [Adobe Illustrator]()
@@ -113,19 +120,11 @@ Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell
   - open-in-browsers
   - autosave on focus
 
-<hr>
-
-##### Notes from Last Run:
-
-Change settings for:
-- dock size
-- dock to right side
-- highlight color
-- key repeat speed
 
 <hr>
 
-### As Wanted
+
+### Java (as needed/wanted)
 #### Java 8
 Download and install [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 (Manually just seems to be the best way to do this because of dependency problems I've run into)
