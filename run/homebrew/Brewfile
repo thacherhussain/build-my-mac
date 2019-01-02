@@ -8,18 +8,17 @@ tap 'homebrew/services'
 # brew is used for installing MacOS dependencies/binaries
 brew 'bash'
 brew 'git'
-brew 'git-secrets'
-# brew 'java8'
-brew 'gradle'
-brew 'heroku-toolbelt'
+brew 'vim'
+brew 'zsh'
+brew 'z'
 
+brew 'gradle'
+brew 'heroku/brew/heroku'
 brew 'postgresql'
 brew 'mysql'
 
-brew 'vim'
+brew 'homebrew/cask-drivers/luna-display'
 
-brew 'zsh'
-brew 'z'
 
 # start psql cluster
 # brew services start postgresql
