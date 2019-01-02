@@ -44,3 +44,42 @@ Obviously, back up all the files you don't want to have blown away before going 
 - From here it will guide you through the steps to a fresh install.
 
 
+### 💾 Download...
+
+Run the following commands:
+
+```sh
+curl -L https://api.github.com/repos/thacherT1D/build-my-mac/tarball --create-dirs -o ~/Projects/dotfiles.tar.gz
+```
+
+Pulls down tar file of this repo onto your machine while creating a */Projects* directory.
+
+```sh
+tar -zxvf ~/Projects/dotfiles.tar.gz -C ~/Projects/
+```
+
+Moves into */Projects* directory and untars the tar downloaded file.
+
+```sh
+cd ~/Projects && mv thacherT1D* dotfiles
+```
+
+Changes the name of the untared directory from "thacherT1D-build-my-mac-[SHA]" to "dotfiles"
+
+
+
+### 📝 Install...
+
+Be sure you are in the *dotfiles* directory.
+
+```
+cd ~/Projects/dotfiles
+```
+
+Then run the following command into your terminal:
+
+```
+source install.sh
+```
+
+When it promts you to enter your password, be sure to check if it is asking for your computer password or your appleID password.
