@@ -50,6 +50,7 @@ Obviously, back up all the files you don't want to have blown away before going 
 #### Update Operating System
 
 Go to App Store and run any operating system updates (this may take a bunch of iterations)
+In Mojave OS updates are in System Preferences > Software Update
 
 #### XCode
 
@@ -57,16 +58,233 @@ Install XCode from the AppStore
 
 Install XCode Command Line Tools from terminal: `xcode-select --install`
 
-Accept the Xcode agreement from the terminal: `xcodebuild -license accept`
+Accept the Xcode agreement from the terminal: `sudo xcodebuild -license accept`
 
 Open XCode to see/accept any additional requirements or install any additional components
 
-#### Java 8 
 
+
+## Install Instructions
+
+
+
+Install 
+
+keyboard speed
+dock items, size, location, remove show-recents, automatically show/hide
+trackpad click
+
+
+
+### Install Homebrew, Brew Apps and Casks
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+```sh
+brew install git vim bash zsh z postgresql mysql node watchman
+```
+
+```sh
+brew cask install java
+brew install gradle
+```
+
+```sh
+brew install heroku/brew/heroku
+```
+
+```sh
+brew cask install iterm2 spectacle alfred google-chrome flycut 1password atom
+```
+
+```npm install -g react-native-cli```
+
+```sudo gem install cocoapods```
+
+### Setup 1Password
+Sign in and shortcut set to option + space
+
+
+### Configure Git
+Let's configure Git to sign your commits with your name and email address.
+
+**WARNING:** Before running the following commands, replace `YOUR FULL NAME` and `YOUR EMAIL ADDRESS` with the name and email from [your GitHub account](https://github.com/settings/profile).
+
+```
+git config --global user.name 'YOUR FULL NAME'
+git config --global user.email 'YOUR EMAIL ADDRESS'
+```
+
+#### Setup Git SSH Keys
+[Git Article](https://help.github.com/articles/connecting-to-github-with-ssh/)
+
+
+**To use your computer comfortably now, open the following things manually: alfred, jumpcut, spectacle**
+Keyboard > Turn off Apple Spotlight, change cmd + space to Alfred
+Turn Off Guest User
+And add them to startup items
+
+### iTerm Config
+
+##### Oh My Zsh
+[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+#### Setting up Zsh
+Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell, add zsh plugins, update theme, and add powerline fonts
+
+#### .zshrc file config with custom scripts
+(Pending)
+
+### Mac Apps with Brew
+```brew install mas```
+
+
+### Other Installs
+- [Omnifocus]()
+- [Setapp]()
+    -> Sip, CleanMyMac, Bartender
+- [Adobe Illustrator]()
+- [iGlasses](https://www.ecamm.com/mac/iglasses/)
+- [Android Studio](https://developer.android.com/studio/install#mac)
+
+## The Manifest
+
+#### - [Xcode](https://developer.apple.com/xcode/)
+Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
+
+#### Javascript
+
+- [node](https://nodejs.org/en/) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
+
+#### Homebrew
+
+- [Homebrew](http://brew.sh/) - Homebrew installs the stuff you need that Apple didn’t.
+- [git](https://git-scm.com/) - Open source version control system | update.
+- [gradle](http://www.gradle.org/)
+
+- [postgresql](https://www.postgresql.org/) - An open source relational database management system (DBMS).
+- [mySQL](https://www.mysql.com/) - Another popular open source database  
+- [z](https://github.com/rupa/z) - A more convenient `cd` which tracks your most used directories, based on 'frecency'.
+- [vim](http://www.vim.org/)
+- [java]()
+
+- [heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) - A Heroku CLI.
+- [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface.
+
+**New**
+- React Native 
+- Cocoa Pods
+
+#### Shell
+
+- [bash](https://www.gnu.org/software/bash/) - Built-in shell | update.
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) - Community-driven framework for managing your zsh configuration.
+- [zsh](http://www.zsh.org/) - An interactive UNIX shell.
+
+#### Apps - Homebrew Cask
+- [1Password](http://wwww.1password.com)
+- [Atom](https://atom.io/) - GitHub's open source text editor
+- [Alfred](https://www.alfredapp.com/) - Mac Spotlight replacement with more custom and productive actions to control your Mac.
+- [Bartender](https://www.macbartender.com/)
+- [Duet](https://www.duetdisplay.com/)
+- [Firefox](https://www.mozilla.org/en-US/firefox/products/) - Mozilla's web browser.
+- [Firefox Developer Edition]
+- [Filezilla]()
+- [Google chrome](https://www.google.com/chrome/) - Google's web browser.
+- [Google Drive](https://www.google.com/drive/download/)
+- [iterm2](https://www.iterm2.com/) - A terminal emulator and replacement for Mac's default Terminal app.
+- [JetBrains Toolbox](https://www.jetbrains.com/toolbox/)
+
+- [Minecraft](https://minecraft.net/en-us/)
+- [Microsoft Office](https://www.microsoft.com/en-us/store/b/office?icid=CNavSoftwareOffice&activetab=tab%3ahomeorpersonal)
+- [mySQL Workbench](https://www.mysql.com/products/workbench/)
+- [Slack](https://slack.com/) - A messaging app
+- [Spectacle](https://www.spectacleapp.com/)
+- [Spotify](http://spotify.com)
+- [Sketch](sketchapp.com)
+- [Skype](http://www.skype.com)
+
+- Astropad
+- What's App
+- Zoom.us
+- Flycut
+- Keyboard Maestro
+- Text Expander
+- PDF Pen Pro
+- Bear
+
+#### App Store - Homebrew Mas
+- [Airmail](http://wwww.airmailapp.com)
+-[DayOne]()
+-[Notability]()
+-[Bear]()
+
+#### And then... 
+~~For Java Environment:~~
+~~- Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)~~
+~~- Install [MySQL Workbench]()~~
+
+#### Post Script Installations and Configs
+- Dock Icons and Order
+- Startup Items 
+    - Background Tier: Alfred, Flycut, Bartender, Spectacle, RescueTime, Backup and Sync
+- Add Accounts to System Preferences
+- Slack Teams
+- Update Desktop Image
+- Dark Mode
+- Update trackpad to include single click (done above)
+- Chrome logins and extensions
+- Sketch Plugins: 
+  - Diverse UI
+  - Anima Launchpad
+
+- Atom plugins:
+  - atom-beautify
+  - atom-bootstrap3
+  - atom-javascript-snippets
+  - auto-indent
+  - open-in-browsers
+  - autosave on focus
+
+
+<hr>
+
+#### Next Planned Additions
+
+
+<hr>
+
+##### Notes from Last Run:
+
+Change settings for:
+- dock size
+- dock to right side
+- highlight color
+- key repeat speed
+
+-------------------------------------------------------------------------
+ Re: Python -- You can install Python packages with
+  pip3 install <package>
+They will install into the site-package directory
+  /usr/local/lib/python3.7/site-packages
+  
+Re: Ruby -- By default, binaries installed by gem will be placed into:
+  /usr/local/lib/ruby/gems/2.6.0/bin
+
+You may want to add this to your PATH.
+
+
+
+#### As Wanted
+### Java 8
 Download and install [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 (Manually just seems to be the best way to do this because of dependency problems I've run into)
 
-## Install Instructions
 
 ### 💾 Download...
 
@@ -107,179 +325,3 @@ source install.sh
 ```
 
 When it promts you to enter your password, be sure to check if it is asking for your computer password or your appleID password.
-
-**To use your computer comfortably now, open the following things manually: alfred, jumpcut, spectacle**
-#### Terminal Config
-
-##### Oh My Zsh
-[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
-
-#### .zshrc file config with custom scripts
-(Pending)
-
-##### Powerline fonts config
-
-In iTerm, move to the Text options by selecting iTerm2 > Preferences > Profile > Text
-In the Text preferences pane, enable the "Use a different font for non-ASCII text" option.
-Then change the font to one of Powerline options. 13pt Cousine is a good choice.
-
-⚠️ Note: Some of the settings require the system to be logged out and back in before taking effect.
-
-<hr>
-
-## The Manifest
-
-#### Javascript
-
-- [node](https://nodejs.org/en/) - A JavaScript runtime built on Chrome's V8 JavaScript engine.
-- [nvm](https://github.com/creationix/nvm) - Node Version Manager: Simple bash script to manage multiple versions of node.
-
-~~#### Python
-
-~~- [Python 3](https://www.python.org/download/releases/3.0/) - An interpreted, object-oriented, high-level programming language.~~
-~~- [Pyenv](https://github.com/yyuu/pyenv) - Simple Python version management.~~
-~~- [Virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/) - Wrappers for creating virtual environments and isolating dependencies.~~
-
-~~#### Ruby
-
-~~- [Ruby](https://www.ruby-lang.org/en/) - A dynamic, open source programming language with a focus on simplicity and productivity -- MINASWAN~~
-~~- [rvm](https://rvm.io/) - Ruby Version Manager: Simple script to mange multiple versions of Ruby.~~
-
-#### Homebrew
-
-- [Homebrew](http://brew.sh/) - Homebrew installs the stuff you need that Apple didn’t.
-- [git](https://git-scm.com/) - Open source version control system | update.
-- [git-secrets](https://github.com/awslabs/git-secrets) - Prevents you from committing secrets and creds into git repositories.
-- [gradle](http://www.gradle.org/)
-- [heroku-toolbelt](https://devcenter.heroku.com/articles/heroku-cli) - A Heroku CLI.
-- [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface.
-- [postgresql](https://www.postgresql.org/) - An open source relational database management system (DBMS).
-- [mySQL](https://www.mysql.com/) - Another popular open source database  
-- [z](https://github.com/rupa/z) - A more convenient `cd` which tracks your most used directories, based on 'frecency'.
-- [vim](http://www.vim.org/)
-
-**New**
-- React
-- React Native 
-- Cocoa Pods
-
-#### Shell
-
-- [bash](https://www.gnu.org/software/bash/) - Built-in shell | update.
-- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) - Community-driven framework for managing your zsh configuration.
-- [zsh](http://www.zsh.org/) - An interactive UNIX shell.
-
-#### Apps - Homebrew Cask
-- [1Password](http://wwww.1password.com)
-- [Atom](https://atom.io/) - GitHub's open source text editor
-- [Alfred](https://www.alfredapp.com/) - Mac Spotlight replacement with more custom and productive actions to control your Mac.
-- [Bartender](https://www.macbartender.com/)
-- [Duet](https://www.duetdisplay.com/)
-- [Firefox](https://www.mozilla.org/en-US/firefox/products/) - Mozilla's web browser.
-- [Firefox Developer Edition]
-- [Filezilla]()
-- [Google chrome](https://www.google.com/chrome/) - Google's web browser.
-- [Google Drive](https://www.google.com/drive/download/)
-- [iterm2](https://www.iterm2.com/) - A terminal emulator and replacement for Mac's default Terminal app.
-- [JetBrains Toolbox](https://www.jetbrains.com/toolbox/)
-- [Join.me](http://join.me)
-~~- [jumpcut](http://jumpcut.sourceforge.net/)~~
-- [Minecraft](https://minecraft.net/en-us/)
-- [Microsoft Office](https://www.microsoft.com/en-us/store/b/office?icid=CNavSoftwareOffice&activetab=tab%3ahomeorpersonal)
-- [mySQL Workbench](https://www.mysql.com/products/workbench/)
-- [Slack](https://slack.com/) - A messaging app
-- [Spectacle](https://www.spectacleapp.com/)
-- [Spotify](http://spotify.com)
-- [Sketch](sketchapp.com)
-- [Skype](http://www.skype.com)
-
-#### App Store - Homebrew Mas
-- [Airmail](http://wwww.airmailapp.com)
-~~- [Evernote](https://evernote.com/) - Note manager app.~~
-~~- [Pocket](https://getpocket.com/) - Article saver/offline reader.~~
-~~- [Sip](http://sipapp.io/) - Color picker.~~
-- [Xcode](https://developer.apple.com/xcode/)- Integrated dev environment with tools for developing for macOS, iOS, WatchOS and tvOS.
-~~-[Things 3]()~~
--[DayOne]()
--[Notability]()
-
-#### And then... 
-~~For Java Environment:~~
-~~- Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)~~
-~~- Install [MySQL Workbench]()~~
-
-#### Post Script Installations and Configs
-- Dock Icons and Order
-- Startup Items 
-    - Background Tier: Alfred, ~~Jumpcut~~, Flycut, Bartender, Spectacle, RescueTime, Backup and Sync, ~~Sip, Flux~~
-- ~~Foreground Tier: Airmail, Chrome, Slack, Things, Messages~~
-- Add Accounts to System Preferences
-- Slack Teams
-- Update Desktop Image
-- Dark Mode
-- Update trackpad to include single click (done above)
-- Chrome logins and extensions
-- Sketch Plugins: 
-  - Diverse UI
-  - Anima Launchpad
-- iTerm:
-  - zsh theme: cobalt2 (https://github.com/wesbos/Cobalt2-iterm)
-  - powerline font (https://github.com/powerline/fonts)
-- Atom plugins:
-  - atom-beautify
-  - atom-bootstrap3
-  - atom-javascript-snippets
-  - auto-indent
-  - open-in-browsers
-  - autosave on focus
-
-Other software (possible installs): 
-~~**- MAMP**~~
-**- Astropad**
-~~- Caffeine~~
-**- Craft Manager**
-~~- Daisy Disk~~
-**- iGlasses**
-~~- Gitter~~
-~~- GluePrint~~
-~~- Nudg.it~~
-~~- SnagIt~~
-~~- StepShot Guides~~
-~~- Tableau~~
-~~- Virtual Box~~
-- What's App
-- Zoom.us
-
-**New**
-- Bear
-- Setapp -> Sip
-- CleanMyMac (maybe through Setapp)
-- PDF Pen Pro
-- Adobe Illustrator
-- Keyboard Maestro
-- Text Expander
-- Flycut
-- Omnifocus
-
-
-<hr>
-
-#### Next Planned Additions
-- React Build Tools (Expo XDE)
-- Android Studio and Configuration ~~(+ Genymotion)~~
-
-<hr>
-
-##### Notes from Last Run:
-(Didn't happen again) - Hombrew Link Failure
-(Sorted) - Adjust order or placement Brewfile or Brew Cask for Java8 in order to have it install before gradle
-- Python version failure
-- Use of Pip command failure
-- OSX time machine settings commented out
-Change settings for:
-- dock size
-- dock to right side
-- highlight color
-- key repeat speed
