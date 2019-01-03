@@ -113,6 +113,7 @@ Bear: ```mas install 1091189122```
 
 #### Post Script Installations and Configs
 - Dock Icons and Order
+- Finder > View > Show Path Bar
 - Startup Items 
     - Background Tier: Alfred, Flycut, Bartender, Spectacle, RescueTime, Backup and Sync
 - Activate Accounts to System Preferences
