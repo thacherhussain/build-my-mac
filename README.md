@@ -39,6 +39,8 @@ brew 'homebrew/cask-drivers/luna-display'
 brew cask install iterm2 spectacle alfred google-chrome flycut 1password atom
 ```
 
+*add in nvm set up
+
 ```
 npm install -g react-native-cli
 ```
