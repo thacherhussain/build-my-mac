@@ -90,7 +90,7 @@ Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell
 (Pending)
 
 ### Other Brew Casks
-```brew cask install astropad firefox google-backup-and-sync keyboard-maestro hazel jetbrains-toolbox minecraft microsoft-office mysqlworkbench rescuetime slack spotify skype whatsapp zoomus textexpander pdfpenpro```
+```brew cask install astropad firefox google-backup-and-sync keyboard-maestro hazel jetbrains-toolbox minecraft microsoft-office mysqlworkbench rescuetime slack spotify skype whatsapp zoomus textexpander```
 
 ### Mac Apps with Brew
 ```brew install mas```
@@ -108,7 +108,10 @@ Bear: ```mas install 1091189122```
 ### Other Installs
 - Omnifocus (Mac App Store)
 - [Setapp](https://setapp.com)
-    -> Sip, CleanMyMac, Bartender, iStat
+    Bartender, BetterTouchTool, ChatMate, CleanMyMac, Endurance, iStat,  
+    MacPilot, Sip, ToothFairy, TripMode, WorldClockPro
+    ~Be Focused
+
 - [Adobe Illustrator]()
 - [iGlasses](https://www.ecamm.com/mac/iglasses/)
 - [Android Studio](https://developer.android.com/studio/install#mac)
@@ -116,8 +119,9 @@ Bear: ```mas install 1091189122```
 #### Post Script Installations and Configs
 - Dock Icons and Order
 - Finder > View > Show Path Bar
-- Startup Items 
-    - Background Tier: Alfred, Flycut, Bartender, Spectacle, RescueTime, Backup and Sync
+- Startup Items
+    - From System Menu: Alfred, Flycut, Bartender, Spectacle, RescueTime, Backup and Sync
+    ** - With Kb Maestro script:
 - Activate Accounts to System Preferences
 - Slack Teams
 
@@ -131,16 +135,16 @@ Bear: ```mas install 1091189122```
   - open-in-browsers
   - autosave on focus
 
-- Hazel
-- Keyboard Maestro
+- Hazel - link with cloud config file
+- Keyboard Maestro - link with cloud config file
 
 <hr>
 
+Do not install pdfpenpro with brew cask -- fails, must install via web download
 
 ### Java (as needed/wanted)
 #### Java 8
 Download and install [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-##### And then... 
+##### And then...
 - Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
-
