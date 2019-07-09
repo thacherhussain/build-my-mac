@@ -148,3 +148,5 @@ Download and install [Java 8](http://www.oracle.com/technetwork/java/javase/down
 
 ##### And then...
 - Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+
+- Key Repeat ```defaults write -g ApplePressAndHoldEnabled -bool false```
