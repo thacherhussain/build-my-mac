@@ -36,17 +36,17 @@ brew 'homebrew/cask-drivers/luna-display'
 ```
 
 ```
-brew cask install iterm2 spectacle alfred google-chrome flycut 1password atom
+brew cask install iterm2 spectacle alfred google-chrome flycut 1password atom visual-studio-code
 ```
 
-*add in nvm set up
+Install nvm to manage you node versions
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+```
 
+Install React Native
 ```
-npm install -g react-native-cli
-```
-
-```
-sudo gem install cocoapods
+npm install -g expo-cli
 ```
 
 ### Setup 1Password
@@ -69,7 +69,7 @@ git config --global user.email 'YOUR EMAIL ADDRESS'
 
 **To use your computer comfortably now:**
 - Keyboard > Turn off Apple Spotlight, change cmd + space to Alfred
-- Turn Off Guest User, start up items: alfred, flycut, spectacle
+- Turn Off Guest User
 - Update Desktop Image
 - Dark Mode
 
@@ -90,12 +90,10 @@ Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell
 (Pending)
 
 ### Other Brew Casks
-```brew cask install astropad firefox google-backup-and-sync keyboard-maestro hazel jetbrains-toolbox minecraft microsoft-office mysqlworkbench rescuetime slack spotify skype whatsapp zoomus textexpander```
+```brew cask install astropad firefox google-backup-and-sync keyboard-maestro hazel jetbrains-toolbox minecraft microsoft-office mysqlworkbench rescuetime slack spotify skype whatsapp zoomus textexpander vscode```
 
 ### Mac Apps with Brew
 ```brew install mas```
-
-~~Pocket:  ```mas install 568494494```~~
 
 Airmail 3: ```mas install 918858936```
 
@@ -112,35 +110,18 @@ Bear: ```mas install 1091189122```
     MacPilot, Sip, ToothFairy, TripMode, WorldClockPro
     ~Be Focused
 
-- [Adobe Illustrator]()
 - [iGlasses](https://www.ecamm.com/mac/iglasses/)
 - [Android Studio](https://developer.android.com/studio/install#mac)
 
 #### Post Script Installations and Configs
-- Dock Icons and Order
+- Dock Icons, Order, and Zoom
 - Finder > View > Show Path Bar
-- Startup Items
-    - From System Menu: Alfred, Flycut, Bartender, Spectacle, RescueTime, Backup and Sync
-    ** - With Kb Maestro script:
 - Activate Accounts to System Preferences
 - Slack Teams
-
-- Chrome logins and extensions
-
-- Atom plugins:
-  - atom-beautify
-  - atom-bootstrap3
-  - atom-javascript-snippets
-  - auto-indent
-  - open-in-browsers
-  - autosave on focus
-
 - Hazel - link with cloud config file
 - Keyboard Maestro - link with cloud config file
 
 <hr>
-
-Do not install pdfpenpro with brew cask -- fails, must install via web download
 
 ### Java (as needed/wanted)
 #### Java 8
