@@ -36,7 +36,7 @@ brew 'homebrew/cask-drivers/luna-display'
 ```
 
 ```
-brew cask install iterm2 spectacle alfred google-chrome flycut 1password atom visual-studio-code
+brew cask install iterm2 spectacle alfred google-chrome flycut 1password atom visual-studio-code yarn
 ```
 
 Install nvm to manage you node versions
@@ -106,9 +106,7 @@ Bear: ```mas install 1091189122```
 ### Other Installs
 - Omnifocus (Mac App Store)
 - [Setapp](https://setapp.com)
-    Bartender, BetterTouchTool, ChatMate, CleanMyMac, Endurance, iStat,  
-    MacPilot, Sip, ToothFairy, TripMode, WorldClockPro
-    ~Be Focused
+    Bartender, ChatMate, CleanMyMac, Endurance, iStat Menus, Sip, ToothFairy, TripMode, WorldClockPro
 
 - [iGlasses](https://www.ecamm.com/mac/iglasses/)
 - [Android Studio](https://developer.android.com/studio/install#mac)
@@ -120,6 +118,15 @@ Bear: ```mas install 1091189122```
 - Slack Teams
 - Hazel - link with cloud config file
 - Keyboard Maestro - link with cloud config file
+
+<hr>
+
+#### To Add
+- git kraken
+- karabiner elements
+- Pock
+- Rescue Time
+- Deliveries
 
 <hr>
 
