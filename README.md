@@ -1,10 +1,6 @@
 # Build My Mac
 
-### Update Operating System
-
-Go to App Store and run any operating system updates (this may take a bunch of iterations)
-In Mojave OS updates are in System Preferences > Software Update
-
+Before getting started make sure that your operating systems is up to date
 ### XCode
 
 Install XCode from the AppStore
@@ -15,45 +11,112 @@ Accept the Xcode agreement from the terminal: `sudo xcodebuild -license accept`
 
 Open XCode to see/accept any additional requirements or install any additional components
 
+### Install nvm and node
 
-### Install Homebrew, Brew Apps and Casks
-```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
+Before installing nvm make sure you have created a `.zshrc` or `.bashrc` file. 
 
-```
-brew install git vim bash zsh z postgresql mysql node watchman
-```
+This article goes through [How to install Node.js and npm on macOS](https://www.newline.co/@Adele/how-to-install-nodejs-and-npm-on-macos--22782681)
 
-```
-brew cask install java
-brew install gradle
-```
-
-```
-brew install heroku/brew/heroku
-brew 'homebrew/cask-drivers/luna-display'
-```
-
-```
-brew cask install iterm2 spectacle alfred google-chrome flycut 1password atom visual-studio-code yarn
-```
 
 Install nvm to manage you node versions
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
 ```
 
-Install React Native
+Using nvm install the version(s) of node you want -- when in doubt go with the latest LTS version with the following commands:
+
 ```
-npm install -g expo-cli
+nvm install --lts
 ```
 
-### Setup 1Password
-Sign in and shortcut set to option + space
+### Install Homebrew, Brew Apps and Casks
+
+Install Homebrew
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Install Java 8
+```
+brew tap AdoptOpenJDK/openjdk
+brew install --cask adoptopenjdk8
+```
+
+```
+brew install git zsh z watchman gradle
+```
+
+#### Install Brew Casks
+These applications are based on my personal preferences
+
+```brew install
+1password
+alfred
+android-studio
+atom
+firefox
+gitkraken
+google-backup-and-sync
+google-chrome
+hazel
+iterm2
+karabiner-elements
+keyboard-maestro
+omnifocus
+pock
+rescuetime
+robo-3t
+skype
+slack
+spectacle
+spotify
+textexpander
+visual-studio-code
+yarn
+zoomus
+```
+
+Install MS Office Separately because it requires confirmation with a pop-up
+`brew install microsoft-office`
+
+Install Notes: 
+- [karabiner-elements](https://karabiner-elements.pqrs.org/docs/getting-started/installation/)
+
+### Install Mac Apps with Homebrew "mas"
+[mas](https://github.com/mas-cli/mas) is a command line interface installed with homebrew to install mac app store applications 
+
+```brew install mas```
+
+Notability: `mas install 736189492`
+Bear: `mas install 1091189122`
+Deliveries: `mas install 290986013`
 
 
-### Configure Git
+### Install Expo CLI (for use with React Native development)
+`npm install -g expo-cli`
+
+### iTerm Config
+
+##### Oh My Zsh
+[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+#### Setting up Zsh
+Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell, add zsh plugins, update theme, and add powerline fonts
+
+#### .zshrc file config with custom scripts
+Add the following and delete anything extraneous
+
+```
+ZSH_THEME="af-magic"
+plugins=(git node npm osx z)
+```
+
+### Git Configuration
+#### Configure Git in the Terminal
 Let's configure Git to sign your commits with your name and email address.
 
 **WARNING:** Before running the following commands, replace `YOUR FULL NAME` and `YOUR EMAIL ADDRESS` with the name and email from [your GitHub account](https://github.com/settings/profile).
@@ -72,69 +135,23 @@ git config --global user.email 'YOUR EMAIL ADDRESS'
 - Turn Off Guest User
 - Update Desktop Image
 - Dark Mode
+- Trackpad > turn on tap to click
 
-
-### iTerm Config
-
-##### Oh My Zsh
-[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-
-```
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
-
-#### Setting up Zsh
-Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell, add zsh plugins, update theme, and add powerline fonts
-
-#### .zshrc file config with custom scripts
-(Pending)
-
-### Other Brew Casks
-```brew cask install astropad firefox google-backup-and-sync keyboard-maestro hazel jetbrains-toolbox minecraft microsoft-office mysqlworkbench rescuetime slack spotify skype whatsapp zoomus textexpander vscode```
-
-### Mac Apps with Brew
-```brew install mas```
-
-Airmail 3: ```mas install 918858936```
-
-Day One: ```mas install 1055511498```
-
-Notability: ```mas install 736189492```
-
-Bear: ```mas install 1091189122```
 
 ### Other Installs
-- Omnifocus (Mac App Store)
-- [Setapp](https://setapp.com)
-    Bartender, ChatMate, CleanMyMac, Endurance, iStat Menus, Sip, ToothFairy, TripMode, WorldClockPro
-
-- [iGlasses](https://www.ecamm.com/mac/iglasses/)
-- [Android Studio](https://developer.android.com/studio/install#mac)
+- Setapp
 
 #### Post Script Installations and Configs
 - Dock Icons, Order, and Zoom
 - Finder > View > Show Path Bar
 - Activate Accounts to System Preferences
+- Notifications
 - Slack Teams
+- 1Password - Sign in and shortcut set to option + space
 - Hazel - link with cloud config file
 - Keyboard Maestro - link with cloud config file
-
-<hr>
-
-#### To Add
-- git kraken
-- karabiner elements
-- Pock
-- Rescue Time
-- Deliveries
-
-<hr>
-
-### Java (as needed/wanted)
-#### Java 8
-Download and install [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- Setapp - sign in and download apps: Bartender, ChatMate, CleanMyMac, Endurance, iStat Menus, Sip, ToothFairy, WorldClockPro
 
 ##### And then...
-- Install [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 
-- Key Repeat ```defaults write -g ApplePressAndHoldEnabled -bool false```
+- Update Key Repeat from terminal ```defaults write -g ApplePressAndHoldEnabled -bool false```
