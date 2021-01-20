@@ -13,7 +13,7 @@ Open XCode to see/accept any additional requirements or install any additional c
 
 ### Install nvm and node
 
-Before installing nvm make sure you have created a `.zshrc` or `.bashrc` file. 
+Before installing nvm make sure you have created a `.zshrc` file. 
 
 This article goes through [How to install Node.js and npm on macOS](https://www.newline.co/@Adele/how-to-install-nodejs-and-npm-on-macos--22782681)
 
@@ -36,44 +36,48 @@ Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Install Java 8
+Install Java 8 from Oracle website
+
+Or using brew commands below (brew install was buggy)
 ```
 brew tap AdoptOpenJDK/openjdk
 brew install --cask adoptopenjdk8
 ```
 
 ```
-brew install git zsh z watchman gradle
+brew install git z watchman gradle yarn
 ```
 
 #### Install Brew Casks
 These applications are based on my personal preferences
 
 ```brew install
+firefox
+slack
 1password
 alfred
+
+iterm2
+visual-studio-code
 android-studio
-atom
-firefox
-gitkraken
+
 google-backup-and-sync
 google-chrome
 hazel
-iterm2
 karabiner-elements
 keyboard-maestro
 omnifocus
 pock
 rescuetime
-robo-3t
-skype
-slack
 spectacle
 spotify
 textexpander
-visual-studio-code
-yarn
 zoomus
+```
+
+Then run
+```
+brew cleanup -s
 ```
 
 Install MS Office Separately because it requires confirmation with a pop-up
@@ -93,7 +97,7 @@ Deliveries: `mas install 290986013`
 
 
 ### Install Expo CLI (for use with React Native development)
-`npm install -g expo-cli`
+`yarn global add expo-cli`
 
 ### iTerm Config
 
@@ -134,7 +138,6 @@ git config --global user.email 'YOUR EMAIL ADDRESS'
 - Keyboard > Turn off Apple Spotlight, change cmd + space to Alfred
 - Turn Off Guest User
 - Update Desktop Image
-- Dark Mode
 - Trackpad > turn on tap to click
 
 
