@@ -11,6 +11,7 @@ Accept the Xcode agreement from the terminal: `sudo xcodebuild -license accept`
 
 Open XCode to see/accept any additional requirements or install any additional components
 
+
 ### Install nvm and node
 
 Before installing nvm make sure you have created a `.zshrc` file. 
@@ -29,6 +30,11 @@ Using nvm install the version(s) of node you want -- when in doubt go with the l
 nvm install --lts
 ```
 
+
+### Install Java 8 
+(Download from Oracle)[https://www.oracle.com/java/technologies/javase-downloads.html]
+
+
 ### Install Homebrew, Brew Apps and Casks
 
 Install Homebrew
@@ -36,17 +42,10 @@ Install Homebrew
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Install Java 8 from Oracle website
+Install the basics: `brew install git z watchman gradle yarn`
 
-Or using brew commands below (brew install was buggy)
-```
-brew tap AdoptOpenJDK/openjdk
-brew install --cask adoptopenjdk8
-```
+Install expo-cli: `yarn global add expo-cli`
 
-```
-brew install git z watchman gradle yarn
-```
 
 #### Install Brew Casks
 These applications are based on my personal preferences
@@ -55,7 +54,7 @@ These applications are based on my personal preferences
 firefox
 slack
 1password
-alfred
+zoomus
 
 iterm2
 visual-studio-code
@@ -63,16 +62,17 @@ android-studio
 
 google-backup-and-sync
 google-chrome
+spotify
+
+alfred
+pock
+spectacle
+rescuetime
+
+textexpander
 hazel
 karabiner-elements
 keyboard-maestro
-omnifocus
-pock
-rescuetime
-spectacle
-spotify
-textexpander
-zoomus
 ```
 
 Then run
@@ -80,24 +80,10 @@ Then run
 brew cleanup -s
 ```
 
-Install MS Office Separately because it requires confirmation with a pop-up
-`brew install microsoft-office`
 
 Install Notes: 
 - [karabiner-elements](https://karabiner-elements.pqrs.org/docs/getting-started/installation/)
 
-### Install Mac Apps with Homebrew "mas"
-[mas](https://github.com/mas-cli/mas) is a command line interface installed with homebrew to install mac app store applications 
-
-```brew install mas```
-
-Notability: `mas install 736189492`
-Bear: `mas install 1091189122`
-Deliveries: `mas install 290986013`
-
-
-### Install Expo CLI (for use with React Native development)
-`yarn global add expo-cli`
 
 ### iTerm Config
 
@@ -107,9 +93,6 @@ Deliveries: `mas install 290986013`
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-
-#### Setting up Zsh
-Follow [fishToZsh Repo](https://github.com/thacherT1D/fishToZsh) to change shell, add zsh plugins, update theme, and add powerline fonts
 
 #### .zshrc file config with custom scripts
 Add the following and delete anything extraneous
@@ -140,6 +123,21 @@ git config --global user.email 'YOUR EMAIL ADDRESS'
 - Update Desktop Image
 - Trackpad > turn on tap to click
 
+
+Install MS Office Separately because it requires confirmation with a pop-up
+`brew install microsoft-office`
+
+
+### Install Mac Apps with Homebrew "mas"
+[mas](https://github.com/mas-cli/mas) is a command line interface installed with homebrew to install mac app store applications 
+
+```brew install mas```
+
+Notability: `mas install 736189492`
+Bear: `mas install 1091189122`
+Deliveries: `mas install 290986013`
+
+*omnifocus from mac app store because of subscrpition*
 
 ### Other Installs
 - Setapp
