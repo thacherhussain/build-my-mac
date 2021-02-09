@@ -54,7 +54,6 @@ These applications are based on my personal preferences
 firefox
 slack
 1password
-zoomus
 
 iterm2
 visual-studio-code
@@ -83,6 +82,8 @@ brew cleanup -s
 
 Install Notes: 
 - [karabiner-elements](https://karabiner-elements.pqrs.org/docs/getting-started/installation/)
+
+Don't use Cask to install Zoom
 
 
 ### iTerm Config
