@@ -95,7 +95,11 @@ alias gcd="git checkout development"
 alias gcm="git commit -m"
 ```
 
-## Node via nvm
+## Node via nvm OR asdf
+
+If you're going to use asdf for other project it's a bit of a headache to also have nvm installed, there is support for legacy version files, but it especially with issues already present with M1 it's easier to pick one or the other.
+
+### nvm
 
 ```
 brew install nvm
@@ -107,6 +111,34 @@ brew install nvm
 - To see your current config run `nvm list`
 - For more options and config run `nvm -h`
 - In any terminal if you want to see which version of node you are using run `node -v`.
+
+### asdf
+
+[asdf commands docs](https://asdf-vm.com/manage/commands.html)
+
+Install dependencies:
+
+```
+brew install coreutils curl git gpg gawk
+```
+
+Starting with the basics -- ruby, node, java and yarn. With M1 you will most likely have to use the `arch -x86_64` prefix, ex.
+
+```
+arch -x86_64 asdf install nodejs latest
+```
+
+```
+arch -x86_64 asdf install java openjdk-14
+```
+
+```
+asdf install yarn
+```
+
+If you are using ruby exports in your .zshrc file, make sure that your asdf call is above any ruby exports
+
+If you're having trouble with ruby checkout [M1 troubleshooting](#m1-troubleshooting)
 
 ## Git Configuration
 
@@ -236,3 +268,36 @@ If needed, install MS Office Separately because it requires confirmation with a 
 ```
 brew install microsoft-office
 ```
+
+## M1 Troubleshooting
+
+### Ruby
+
+If you're having trouble installing an older version of ruby you can try the steps outlined in this article on [how to install older versions of ruby on an M1 MacBook](https://stackoverflow.com/questions/69012676/install-older-ruby-versions-on-a-m1-macbook)
+
+### Cocoapods
+
+    # list any cocoapods/dependencies installed
+
+    gem list --local | grep cocoapods
+
+
+    # uninstall them all
+
+    sudo gem uninstall cocoapods cocoapods-core cocoapods-deintegrate cocoapods-downloader cocoapods-plugins cocoapods-search cocoapods-trunk cocoapods-try
+
+
+    # brew uninstall any version of ruby, rbenv, or ruby-build that is installed. You might have to use
+
+    brew uninstall ruby --force
+
+
+    # Reinstall ffi and cocoapods with x86
+
+    sudo arch -x86_64 gem install ffi
+    sudo arch -x86_64 gem install cocoapods
+
+
+    # To check this install before using fastlane to bootstrap the application, navigate to the ios folder within the app and then run `pod install` to confirm
+
+Source: [Installing cocoapods for M1](https://stackoverflow.com/questions/66644365/cocoapods-on-m1-apple-silicon-fails-with-ffi-wrong-architecture/66771694#66771694)
