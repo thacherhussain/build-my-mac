@@ -1,27 +1,50 @@
 # Build My Mac
 
+[Xcode](#xcode)
+[Homebrew](#homebrew)
+[iTerm2 / oh-my-zsh](#iterm2--oh-my-zsh)
+[Node via nvm](#node-via-nvm)
+[Git Configuration](#git-configuration)
+[Back to Homebrew](#back-to-homebrew)
+[Setting stuff to set stuff up](#setting-stuff-up-to-set-stuff-up)
+[Install More Apps with Homebrew](#install-more-apps-with-homebrew)
+[Install Mac Apps with Homebrew "mas"](#install-mac-apps-with-homebrew-mas)
+[More Installations and Configs](#more-installations-and-configs)
+[M1 Troubleshooting](#m1-troubleshooting)
+
+If needed accept and update the OS as prompted
+
+During the initial setup you will:
+
+- setup internet
+- sign in with your apple ID
+
+Recommended: change your password to something super simple JUST FOR SETUP and then change it to something more secure afterwards
+
 Do yourself a favor and don't skip touch ID in the initial setup
 
 To use your computer comfortably during setup:
 
+- remove all permanent dock items (right click to remove launchpad from dock)
 - trackpad > turn on tap to click
 - update the dock placement and show/hide dock
-- remove all permanent dock items
+- turn off show recent applications in dock
 - change the desktop background to something nice
-
-Recommended: change your password to something super simple JUST FOR SETUP and then change it to something more secure afterwards
-
-- Setup internet
-- Sign into your apple account in system preferences
 - Add at least your personal email to the Internet Accounts in System Preferences
+- double check that your operating systems is up to date
+- turn off hot corners
+- bump up time on lock screen/display sleep
 
-IMPORTANT: Make sure that your operating systems is up to date
+After Setup:
+
+- change password to something more secure (and put it in 1Password)
+- turn back up time to sleep display
 
 ## Xcode
 
-Start the XCode download from the AppStore
+Download Xcode from the AppStore
 
-Open XCode to see/accept any additional requirements or install any additional components
+Open Xcode to see/accept any additional requirements or install any additional components
 
 If they're not installed by Homebrew, you can install the XCode Command Line Tools from terminal by running:
 
@@ -37,35 +60,26 @@ sudo xcodebuild -license accept
 
 ## Homebrew
 
+Go to the homebrew site [here](https://brew.sh/)
+
 From Terminal install Homebrew:
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-Make your life easier and immediately install a few basics and some nice to haves...
+This will also install the Xcode command line tools if that hasn't completed yet
 
-```
-brew install git python yarn watchman
-```
+make sure to read the directions after the brew install completes to make add Homebrew to your PATH
 
-\*yarn requires node, but don't worry about that quite yet
-
-```
-brew install --cask spectacle iterm2 obsidian firefox 1password visual-studio-code
-```
-
-## Setting stuff up to set stuff up
-
-- open spectacle
-- open and setup 1Password, change shortcut to `cmd + .`
-- add/login into Accounts — at least personal gmail
-- open and setup Firefox and/or log into Firefox Sync
-- open VScode, login to sync settings
-- quit terminal and open iTerm2
-- open Obsidian and link to iCloud vault
+then use homebrew... `brew install git python watchman`
 
 ## iTerm2 / oh-my-zsh
+
+For this you're going to want to `brew install --cask iterm2 visual-studio-code`
+then quit terminal and open iTerm
+
+and a helper if you'd like `brew install --cask spectacle` then open spectacle and allow it to install and then open it again after install, update the accessibility settings as requested and add it to login items
 
 Install oh-my-zsh:
 
@@ -73,7 +87,7 @@ Install oh-my-zsh:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-Add powerlevel10k theme: https://github.com/romkatv/powerlevel10k
+Add powerlevel10k theme with the zsh installation: https://github.com/romkatv/powerlevel10k#oh-my-zsh
 
 Open and update .zshrc — remove uneeded boiler plate add aliases
 
@@ -95,52 +109,28 @@ alias gcd="git checkout development"
 alias gcm="git commit -m"
 ```
 
-## Node via nvm OR asdf
+run `source ~/.zshrc` to apply those changes -- this will take you through the p10k prompts
 
-If you're going to use asdf for other project it's a bit of a headache to also have nvm installed, there is support for legacy version files, but it especially with issues already present with M1 it's easier to pick one or the other.
+iterm > preferences > profiles > window > adjust transparency to 50 and blur to 10
 
-### nvm
+## Node via nvm
 
 ```
 brew install nvm
 ```
 
-- Follow the directions provided after the install and don't forget to run `source ~/.zshrc` to apply those changes
+- Follow the directions provided after the install and don't forget to run `source ~/.zshrc` or quit and reopen iTerm to apply those changes
 - Verify that this has worked by running `nvm ls-remote 16` which will list all available versions of node v16
 - Check out the [node docs](https://nodejs.org/en/about/releases/) to decide which version(s) of node you would like to install and then run `nvm install 00 --lts` which will install the latest stable version for that version node.
 - To see your current config run `nvm list`
 - For more options and config run `nvm -h`
 - In any terminal if you want to see which version of node you are using run `node -v`.
 
-### asdf
-
-[asdf commands docs](https://asdf-vm.com/manage/commands.html)
-
-Install dependencies:
-
-```
-brew install coreutils curl git gpg gawk
-```
-
-Starting with the basics -- ruby, node, java and yarn. With M1 you will most likely have to use the `arch -x86_64` prefix, ex.
-
-```
-arch -x86_64 asdf install nodejs latest
-```
-
-```
-arch -x86_64 asdf install java openjdk-14
-```
-
-```
-asdf install yarn
-```
-
-If you are using ruby exports in your .zshrc file, make sure that your asdf call is above any ruby exports
-
-If you're having trouble with ruby checkout [M1 troubleshooting](#m1-troubleshooting)
-
 ## Git Configuration
+
+`brew install --cask 1password`
+
+- open and setup 1Password, accept the accessibility settings as requested and add it to login items, then change quick access shortcut to `cmd + .`
 
 Configure Git in the Terminal to sign your commits with your name and email address.
 
@@ -154,6 +144,24 @@ git config --global user.email 'YOUR EMAIL ADDRESS'
 run `git config --list` to check that you set these correctly
 
 [Setting up GitHub SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+
+## Back to Homebrew
+
+```
+brew install yarn
+```
+
+```
+brew install --cask obsidian firefox
+```
+
+## Setting stuff up to set stuff up
+
+- apple id > icloud > toggle off Password & Keychain
+- add/login into Accounts — at least personal gmail
+- open and setup Firefox and/or log into Firefox Sync
+- open VScode, login to sync settings
+- open Obsidian and link to iCloud vault
 
 ## Install More Apps with Homebrew
 
@@ -172,34 +180,16 @@ brew install --cask karabiner-elements
 Misc small things:
 
 ```
-brew install --cask rocket alfred rescuetime textexpander keyboard-maestro setapp spotify expressvpn sourcetree react-native-debugger
+brew install --cask rocket alfred rescuetime textexpander keyboard-maestro setapp spotify expressvpn sourcetree
 ```
 
 If you want to do all this in one go...
 
 ```
-brew install --cask slack google-drive google-chrome zoom karabiner-elements rocket alfred rescuetime textexpander keyboard-maestro setapp spotify expressvpn sourcetree react-native-debugger
+brew install --cask slack google-drive google-chrome zoom karabiner-elements rocket alfred rescuetime textexpander keyboard-maestro setapp spotify expressvpn sourcetree
 ```
 
-If you have a touch bar
-
-```
-brew install pock
-```
-
-Then run
-
-```
-brew cleanup -s
-```
-
-## React Native
-
-Install expo-cli:
-
-```
-yarn global add expo-cli
-```
+Then run `brew cleanup -s`
 
 ## Install Mac Apps with Homebrew "mas"
 
@@ -217,8 +207,6 @@ Find an app to install:
 
 Spark: `mas install 1176895641`
 
-Notability: `mas install 736189492`
-
 Bear: `mas install 1091189122`
 
 Deliveries: `mas install 290986013`
@@ -230,7 +218,7 @@ TestFlight: `mas install 899247664`
 All together now:
 
 ```
-mas install 1176895641 736189492 1091189122 290986013 419330170 899247664
+mas install 1176895641 1091189122 290986013 419330170 899247664
 ```
 
 Seems like you actually have to download these from the sites...
@@ -245,18 +233,23 @@ Then run
 brew cleanup -s
 ```
 
-### More Installations and Configs
+## More Installations and Configs
 
 - Finder > View > Show Path Bar
 - Activate other Internet Accounts
 - Check Allowed Notifications
+- Turn Off Guest User
 - Slack Teams
+- Open TestFlight and install Notability
 - Keyboard Maestro - link with cloud config file
 - Setapp - sign in and download favorited apps and config
 - Alfred
   - restore from previous config
   - Keyboard > Turn off Apple Spotlight, change cmd + space to Alfred
-- Turn Off Guest User
+- Sign into text expander
+- Xcode
+  - sign into apple developer account
+  - add new iOS versions
 - Update Key Repeat from terminal
 
 ```
