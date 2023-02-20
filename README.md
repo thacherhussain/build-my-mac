@@ -111,9 +111,13 @@ alias gcm="git commit -m"
 
 run `source ~/.zshrc` to apply those changes -- this will take you through the p10k prompts
 
-iterm > preferences > profiles > window > adjust transparency to 50 and blur to 10
+iterm > preferences > profiles > window > adjust transparency to 30 and blur to 10
 
 ## Node via nvm
+
+```
+npm install -g npm
+```
 
 ```
 brew install nvm
@@ -180,13 +184,13 @@ brew install --cask karabiner-elements
 Misc small things:
 
 ```
-brew install --cask rocket alfred rescuetime textexpander keyboard-maestro setapp spotify expressvpn sourcetree
+brew install --cask rocket alfred rescuetime textexpander keyboard-maestro setapp spotify expressvpn sourcetree dropbox
 ```
 
 If you want to do all this in one go...
 
 ```
-brew install --cask slack google-drive google-chrome zoom karabiner-elements rocket alfred rescuetime textexpander keyboard-maestro setapp spotify expressvpn sourcetree
+brew install --cask slack google-drive google-chrome zoom karabiner-elements rocket alfred rescuetime textexpander keyboard-maestro setapp spotify expressvpn sourcetree dropbox
 ```
 
 Then run `brew cleanup -s`
@@ -221,6 +225,18 @@ All together now:
 mas install 1176895641 1091189122 290986013 419330170 899247664
 ```
 
+If needed, install MS Office Separately because it requires confirmation with a pop-up:
+
+Word: `mas install 462054704`
+
+Excel: `mas install 462058435`
+
+All together:
+
+```
+mas install 462054704 462058435
+```
+
 Seems like you actually have to download these from the sites...
 
 [postgres app](https://postgresapp.com/)
@@ -235,6 +251,7 @@ brew cleanup -s
 
 ## More Installations and Configs
 
+- Install Notability from Test Flight
 - Finder > View > Show Path Bar
 - Activate other Internet Accounts
 - Check Allowed Notifications
@@ -243,23 +260,20 @@ brew cleanup -s
 - Open TestFlight and install Notability
 - Keyboard Maestro - link with cloud config file
 - Setapp - sign in and download favorited apps and config
+- BusyCal - View > Days in Week > select "One Week" rather than "7 Days"
 - Alfred
   - restore from previous config
   - Keyboard > Turn off Apple Spotlight, change cmd + space to Alfred
+-
 - Sign into text expander
 - Xcode
   - sign into apple developer account
-  - add new iOS versions
-- Update Key Repeat from terminal
+  - add new iOS versions: Preferences > Platforms > +
+
+Update Key Repeat from terminal:
 
 ```
 defaults write -g ApplePressAndHoldEnabled -bool false
-```
-
-If needed, install MS Office Separately because it requires confirmation with a pop-up
-
-```
-brew install microsoft-office
 ```
 
 ## M1 Troubleshooting
