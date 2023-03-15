@@ -1,15 +1,25 @@
 # Build My Mac
 
 [Xcode](#xcode)
+
 [Homebrew](#homebrew)
+
 [iTerm2 / oh-my-zsh](#iterm2--oh-my-zsh)
+
 [Node via nvm](#node-via-nvm)
+
 [Git Configuration](#git-configuration)
+
 [Back to Homebrew](#back-to-homebrew)
+
 [Setting stuff to set stuff up](#setting-stuff-up-to-set-stuff-up)
+
 [Install More Apps with Homebrew](#install-more-apps-with-homebrew)
+
 [Install Mac Apps with Homebrew "mas"](#install-mac-apps-with-homebrew-mas)
+
 [More Installations and Configs](#more-installations-and-configs)
+
 [M1 Troubleshooting](#m1-troubleshooting)
 
 If needed accept and update the OS as prompted
