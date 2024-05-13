@@ -89,7 +89,9 @@ then use homebrew... `brew install git python watchman`
 For this you're going to want to `brew install --cask iterm2 visual-studio-code`
 then quit terminal and open iTerm
 
-and a helper if you'd like `brew install --cask spectacle` then open spectacle and allow it to install and then open it again after install, update the accessibility settings as requested and add it to login items
+~and a helper if you'd like `brew install --cask spectacle` then open spectacle and allow it to install and then open it again after install, update the accessibility settings as requested and add it to login items~
+
+spectacle has been depreciated, use the [rectangle app](https://rectangleapp.com/)
 
 Install oh-my-zsh:
 
