@@ -10,10 +10,6 @@
 
 [Git Configuration](#git-configuration)
 
-[Back to Homebrew](#back-to-homebrew)
-
-[Setting stuff to set stuff up](#setting-stuff-up-to-set-stuff-up)
-
 [Install More Apps with Homebrew](#install-more-apps-with-homebrew)
 
 [Install Mac Apps with Homebrew "mas"](#install-mac-apps-with-homebrew-mas)
@@ -35,24 +31,23 @@ Do yourself a favor and don't skip touch ID in the initial setup
 
 To use your computer comfortably during setup:
 
-- remove all permanent dock items (right click to remove launchpad from dock)
-- trackpad > turn on tap to click
-- update the dock placement and show/hide dock
-- turn off show recent applications in dock
-- change the desktop background to something nice
-- Add at least your personal email to the Internet Accounts in System Preferences
 - double check that your operating systems is up to date
-- turn off hot corners
+- dock updates
+  - remove all permanent dock items (right click to remove launchpad from dock)
+  - update the dock placement and show/hide dock
+  - turn off show recent applications in dock
+- trackpad > turn on tap to click
+- change the desktop background to something nice
+- add at least your personal email to the Internet Accounts in System Preferences
+- turn click on desktop to hide apps off
+- Finder > View > Show Path Bar
+- Finder > Settings > Advanced > deselect “Show all filename extensions”
 - bump up time on lock screen/display sleep
-
-After Setup:
-
-- change password to something more secure (and put it in 1Password)
-- turn back up time to sleep display
+- turn Off Guest User
 
 ## Xcode
 
-Download Xcode from the AppStore
+Download Xcode, TestFlight, and Apple Developer from the AppStore
 
 Open Xcode to see/accept any additional requirements or install any additional components
 
@@ -80,18 +75,37 @@ From Terminal install Homebrew:
 
 This will also install the Xcode command line tools if that hasn't completed yet
 
-make sure to read the directions after the brew install completes to make add Homebrew to your PATH
+Make sure to read the directions after the brew install completes to make add Homebrew to your PATH, then...
 
-then use homebrew... `brew install git python watchman`
+```
+brew install git python watchman mas yarn
+```
+
+Note: [mas](https://github.com/mas-cli/mas) is a command line interface installed with homebrew to install mac app store applications
+
+## To make your life easier -- 1Password, VSCode, FireFox, and 1Password Safari extension
+
+```
+brew install --cask 1password visual-studio-code firefox
+```
+
+```
+mas install 1569813296
+```
+
+- open and setup 1Password, accept the accessibility settings as requested and add it to login items, then change quick access shortcut to `cmd + .`
+- apple id > icloud > toggle off Password & Keychain
+- open and setup Firefox and/or log into Firefox Sync
+- open and setup VSCode with github sync
+- open Safari and install 1Password extension
 
 ## iTerm2 / oh-my-zsh
 
-For this you're going to want to `brew install --cask iterm2 visual-studio-code`
-then quit terminal and open iTerm
+For this you're going to want to run the below and then quit terminal and open iTerm
 
-~and a helper if you'd like `brew install --cask spectacle` then open spectacle and allow it to install and then open it again after install, update the accessibility settings as requested and add it to login items~
-
-spectacle has been depreciated, use the [rectangle app](https://rectangleapp.com/)
+```
+brew install --cask iterm2
+```
 
 Install oh-my-zsh:
 
@@ -100,6 +114,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```
 
 Add powerlevel10k theme with the zsh installation: https://github.com/romkatv/powerlevel10k#oh-my-zsh
+
+Quit and reopen iTerm to run through the powerlevel10k wizard
 
 Open and update .zshrc — remove uneeded boiler plate add aliases
 
@@ -121,15 +137,18 @@ alias gcd="git checkout development"
 alias gcm="git commit -m"
 ```
 
-run `source ~/.zshrc` to apply those changes -- this will take you through the p10k prompts
+run
+
+```
+source ~/.zshrc
+```
+
+to apply those changes -- this will take you through the p10k prompts
 
 iterm > preferences > profiles > window > adjust transparency to 30 and blur to 10
+iterm > preferences > advanced > update scroll (look at other iTerm settings)
 
 ## Node via nvm
-
-```
-npm install -g npm
-```
 
 ```
 brew install nvm
@@ -144,10 +163,6 @@ brew install nvm
 
 ## Git Configuration
 
-`brew install --cask 1password`
-
-- open and setup 1Password, accept the accessibility settings as requested and add it to login items, then change quick access shortcut to `cmd + .`
-
 Configure Git in the Terminal to sign your commits with your name and email address.
 
 **WARNING:** Before running the following commands, replace `YOUR FULL NAME` and `YOUR EMAIL ADDRESS` with the name and email from [your GitHub account](https://github.com/settings/profile).
@@ -161,99 +176,39 @@ run `git config --list` to check that you set these correctly
 
 [Setting up GitHub SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
-## Back to Homebrew
-
-```
-brew install yarn
-```
-
-```
-brew install --cask obsidian firefox
-```
-
-## Setting stuff up to set stuff up
-
-- apple id > icloud > toggle off Password & Keychain
-- add/login into Accounts — at least personal gmail
-- open and setup Firefox and/or log into Firefox Sync
-- open VScode, login to sync settings
-- open Obsidian and link to iCloud vault
+Repeat the SSH key process for any professional github/gitlab accounts
 
 ## Install More Apps with Homebrew
-
-For Work:
-
-```
-brew install --cask slack google-drive google-chrome zoom
-```
 
 [Karabiner-Elements](https://karabiner-elements.pqrs.org/docs/getting-started/installation/):
 
 ```
-brew install --cask karabiner-elements
+brew install --cask karabiner-elements && brew cleanup -s
 ```
 
-Misc small things:
+- setup CAPSLOCK as global shortcut key: Complex Modifications > Add predefined rule > "Change caps_lock to command+control+option+shift"
+
+Update Key Repeat from terminal:
 
 ```
-brew install --cask rocket alfred rescuetime textexpander keyboard-maestro setapp spotify expressvpn sourcetree dropbox
+defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 
-If you want to do all this in one go...
+Other programs and utils:
 
 ```
-brew install --cask slack google-drive google-chrome zoom karabiner-elements rocket alfred rescuetime textexpander keyboard-maestro setapp spotify expressvpn sourcetree dropbox
+brew install --cask alfred android-studio discord dropbox expressvpn flipper google-chrome google-drive imageoptim keyboard-maestro obsidian rectangle rescuetime rocket screens-connect setapp skype slack sourcetree textexpander zoom && brew cleanup -s
 ```
 
-Then run `brew cleanup -s`
+## Install more Mac Apps with Homebrew "mas"
 
-## Install Mac Apps with Homebrew "mas"
+To find an app to install you can run `mas search [APPNAME]` returns a list of possible matches with codes.
 
-[mas](https://github.com/mas-cli/mas) is a command line interface installed with homebrew to install mac app store applications
-
-```
-brew install mas
-```
-
-Find an app to install:
-
-`mas search Spark` returns a list of possible matches with codes
-
-`mas install 1176895641`
-
-Spark: `mas install 1176895641`
-
-Bear: `mas install 1091189122`
-
-Deliveries: `mas install 290986013`
-
-Moom: `mas install 419330170`
-
-TestFlight: `mas install 899247664`
-
-All together now:
+Use mas to install Bear, Canva, Capcut, Deliveries, MetaPho, Mimeo, Moom, Spark, TandemDeviceUpdater, Word and Excel:
 
 ```
-mas install 1176895641 1091189122 290986013 419330170 899247664
+mas install 1091189122 897446215 1500855883 290986013 914457352 1282504627 419330170 1176895641 1100870281 462054704 462058435
 ```
-
-If needed, install MS Office Separately because it requires confirmation with a pop-up:
-
-Word: `mas install 462054704`
-
-Excel: `mas install 462058435`
-
-All together:
-
-```
-mas install 462054704 462058435
-```
-
-Seems like you actually have to download these from the sites...
-
-[postgres app](https://postgresapp.com/)
-
-[devonthink 3](https://www.devontechnologies.com)
 
 Then run
 
@@ -263,30 +218,41 @@ brew cleanup -s
 
 ## More Installations and Configs
 
-- Install Notability from Test Flight
-- Finder > View > Show Path Bar
-- Activate other Internet Accounts
-- Check Allowed Notifications
-- Turn Off Guest User
-- Slack Teams
-- Open TestFlight and install Notability
-- Keyboard Maestro - link with cloud config file
-- Setapp - sign in and download favorited apps and config
-- BusyCal - View > Days in Week > select "One Week" rather than "7 Days"
-- Alfred
-  - restore from previous config
-  - Keyboard > Turn off Apple Spotlight, change cmd + space to Alfred
--
-- Sign into text expander
+Open and log into all cask and mas installed apps -- special cases:
+
+- Spark - add email accounts
+- Setapp
+  - install all favorited apps
+  - BusyCal:
+    - Add Calendar accounts
+    - General > Week view shows > select "One Week" rather than "7 Days"
+    - General > Start week on > "Monday"
+    - add timezones
+    - add tripsy calendar
+- Rectangle (accept spectacle settings)
+- TextExander (use license key)
+- Obsidian + link to iCloud vault
+- TestFlight - install Notability + turn on iCloud Syncing
+- DropBox (includes config files for Alfred and Keyboard Maestro)
+  - Alfred: use license key and restore from previous config
+    - System Settings: Keyboard > Turn off Apple Spotlight, change cmd + space to Alfred
+  - Keyboard Maestro: use license key and link to cloud config
+- Google Drive
+  - add accounts and add drives to Finder favorites
+- Chrome + install [Google Meet Chrome PWA](https://support.google.com/meet/answer/10708569?hl=en)
+- Android Studio - add a Pixel 5 API 31 emulator
 - Xcode
   - sign into apple developer account
   - add new iOS versions: Preferences > Platforms > +
+- Insomnia - [install v2023.5.8](https://github.com/Kong/insomnia/releases/tag/core%402023.5.8) then add profile.json from other installation
+- Install Screens app from saved file
 
-Update Key Repeat from terminal:
+After Setup:
 
-```
-defaults write -g ApplePressAndHoldEnabled -bool false
-```
+- check Allowed Notifications
+- change password to something more secure (and put it in 1Password)
+- turn back up time to sleep display
+- add external keyboard and trackpad
 
 ## M1 Troubleshooting
 
@@ -296,27 +262,35 @@ If you're having trouble installing an older version of ruby you can try the ste
 
 ### Cocoapods
 
-    # list any cocoapods/dependencies installed
+#### list any cocoapods/dependencies installed
 
-    gem list --local | grep cocoapods
+```
+gem list --local | grep cocoapods
+```
 
+#### uninstall them all
 
-    # uninstall them all
+```
+sudo gem uninstall cocoapods cocoapods-core cocoapods-deintegrate cocoapods-downloader cocoapods-plugins cocoapods-search cocoapods-trunk cocoapods-try
+```
 
-    sudo gem uninstall cocoapods cocoapods-core cocoapods-deintegrate cocoapods-downloader cocoapods-plugins cocoapods-search cocoapods-trunk cocoapods-try
+#### brew uninstall any version of ruby, rbenv, or ruby-build that is installed. You might have to use
 
+```
+brew uninstall ruby --force
+```
 
-    # brew uninstall any version of ruby, rbenv, or ruby-build that is installed. You might have to use
+#### Reinstall ffi and cocoapods with x86
 
-    brew uninstall ruby --force
+```
+sudo arch -x86_64 gem install ffi
+sudo arch -x86_64 gem install cocoapods
+```
 
+To check this install before using fastlane to bootstrap the application, navigate to the ios folder within the app and then run the below to confirm
 
-    # Reinstall ffi and cocoapods with x86
-
-    sudo arch -x86_64 gem install ffi
-    sudo arch -x86_64 gem install cocoapods
-
-
-    # To check this install before using fastlane to bootstrap the application, navigate to the ios folder within the app and then run `pod install` to confirm
+```
+pod install
+```
 
 Source: [Installing cocoapods for M1](https://stackoverflow.com/questions/66644365/cocoapods-on-m1-apple-silicon-fails-with-ffi-wrong-architecture/66771694#66771694)
