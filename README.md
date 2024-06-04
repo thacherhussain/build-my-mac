@@ -178,6 +178,8 @@ run `git config --list` to check that you set these correctly
 
 Repeat the SSH key process for any professional github/gitlab accounts
 
+If you're setting up a second ssh key remember to change the name of the folder to `~/.ssh/id_[name]` to save as a new key.
+
 ## Install More Apps with Homebrew
 
 [Karabiner-Elements](https://karabiner-elements.pqrs.org/docs/getting-started/installation/):
@@ -197,7 +199,7 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 Other programs and utils:
 
 ```
-brew install --cask alfred android-studio discord dropbox expressvpn flipper google-chrome google-drive imageoptim keyboard-maestro obsidian rectangle rescuetime rocket screens-connect setapp skype slack sourcetree textexpander zoom && brew cleanup -s
+brew install --cask alfred android-studio discord dropbox expressvpn flipper go google-chrome google-drive imageoptim keyboard-maestro obsidian rectangle rescuetime rocket screens-connect setapp skype slack sourcetree textexpander zoom && brew cleanup -s
 ```
 
 ## Install more Mac Apps with Homebrew "mas"
@@ -236,11 +238,11 @@ Open and log into all cask and mas installed apps -- special cases:
 - DropBox (includes config files for Alfred and Keyboard Maestro)
   - Alfred: use license key and restore from previous config
     - System Settings: Keyboard > Turn off Apple Spotlight, change cmd + space to Alfred
+    - [Build and run alfred-maestro workflow](#Setting-up-Alfred-Maestro)
   - Keyboard Maestro: use license key and link to cloud config
 - Google Drive
   - add accounts and add drives to Finder favorites
 - Chrome + install [Google Meet Chrome PWA](https://support.google.com/meet/answer/10708569?hl=en)
-- Android Studio - add a Pixel 5 API 31 emulator
 - Xcode
   - sign into apple developer account
   - add new iOS versions: Preferences > Platforms > +
@@ -253,6 +255,86 @@ After Setup:
 - change password to something more secure (and put it in 1Password)
 - turn back up time to sleep display
 - add external keyboard and trackpad
+
+## Android Studio
+
+After using the Homebrew cask to install Android Studio:
+
+- open the app and allow the initial build to complete, accepting the default options
+- add a Pixel 5 API 31 emulator with the Device Manager
+- add this to your .zshrc
+
+  ```
+  # Android
+  export ANDROID_HOME=$HOME/Library/Android/sdk
+  export PATH=$PATH:$ANDROID_HOME/emulator
+  export PATH=$PATH:$ANDROID_HOME/platform-tools
+  ```
+
+## Java
+
+Download and install [JDK17](https://www.oracle.com/java/technologies/downloads/#jdk17-mac)
+
+Add this to your .zshrc
+
+```
+# Java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
+```
+
+Remember to restart your terminal and then you can check that it is using the right version with `java --version`
+
+## Ruby (with rbenv) and Cocoapods
+
+Install [rbenv](https://github.com/rbenv/rbenv) with Homebrew
+
+```
+brew install rbenv ruby-build
+```
+
+Add this to your .zshrc
+
+```
+# rbenv
+eval "$(rbenv init - zsh)"
+```
+
+Then install 2.7.5 (or whatever you need)
+
+```
+rbenv install 2.7.5
+```
+
+And set the version to be used globally
+
+```
+rbenv global 2.7.5
+```
+
+Remember to restart your terminal and then you can check that it is using the right version with `ruby -v`.
+
+### bundler
+
+When installing bundler you may get a notice about the latest version allowable for the version of ruby that you're using -- in the case of 2.7.5 the latest allowable bundler version is 2.4.22
+
+```
+gem install bundler -v 2.4.22
+```
+
+### Cocoapods
+
+For an M Chip Mac:
+
+```
+sudo arch -arm64e gem install ffi
+sudo arch -arm64e gem install cocoapods
+```
+
+To check this install navigate to the ios folder within the app and then run the below to confirm
+
+```
+pod install
+```
 
 ## M1 Troubleshooting
 
@@ -287,10 +369,16 @@ sudo arch -x86_64 gem install ffi
 sudo arch -x86_64 gem install cocoapods
 ```
 
-To check this install before using fastlane to bootstrap the application, navigate to the ios folder within the app and then run the below to confirm
-
-```
-pod install
-```
-
 Source: [Installing cocoapods for M1](https://stackoverflow.com/questions/66644365/cocoapods-on-m1-apple-silicon-fails-with-ffi-wrong-architecture/66771694#66771694)
+
+# Other
+
+### Setting up Alfred-Maestro
+
+(For now) The M series chips require building the [Alfred-Maestro](https://github.com/iansinnott/alfred-maestro) workflow locally. This requires installing `go` with Homebrew (done above). After running the below, you can just open the workflow file from the directory as you would if you had downloaded it.
+
+```
+git clone https://github.com/iansinnott/alfred-maestro
+cd alfred-maestro
+make pack
+```
