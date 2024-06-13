@@ -206,10 +206,10 @@ brew install --cask alfred android-studio discord dropbox expressvpn flipper go 
 
 To find an app to install you can run `mas search [APPNAME]` returns a list of possible matches with codes.
 
-Use mas to install Bear, Canva, Capcut, Deliveries, MetaPho, Mimeo, Moom, Spark, TandemDeviceUpdater, Word and Excel:
+Use mas to install Bear, Canva, Capcut, Deliveries, MetaPho, Mimeo, Moom, Spark, and TandemDeviceUpdater:
 
 ```
-mas install 1091189122 897446215 1500855883 290986013 914457352 1282504627 419330170 1176895641 1100870281 462054704 462058435
+mas install 1091189122 897446215 1500855883 290986013 914457352 1282504627 419330170 1176895641 1100870281  
 ```
 
 Then run
